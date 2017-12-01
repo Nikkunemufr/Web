@@ -1,0 +1,7 @@
+#afficheur{
+			font-family:consolas;
+			font-size:400%;
+			border:1px solid;
+			display:inline-block;
+			white-space:pre;
+		}

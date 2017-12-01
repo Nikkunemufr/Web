@@ -1,0 +1,28 @@
+#texte1{
+
+	display:flex;
+
+
+}
+
+#texte2{
+
+	display:flex;
+
+}
+
+.left{
+	width: 35%;
+	float:left;
+}
+
+.right{
+	width: 40%;
+	float:right;
+}
+
+section{
+
+margin-right: 2%;
+margin-left: 2%;
+}

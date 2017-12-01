@@ -1,0 +1,83 @@
+/**Police d'ecriture**/
+@font-face {
+	font-family: "perso";
+	src:url(../polices/Quicksand_Bold.otf);
+}
+
+/**Style général de la page**/
+
+body {
+	font-family: perso,Impact,"Segoe Print";
+	font-size: 20px;
+	padding: 0;
+	margin: 0;
+}
+
+footer p{
+	background-color: rgba(0,0,0,0.5);
+	text-align:center;
+	font-weight: normal;
+	font-size: 12px;
+	color: white;
+}
+
+a{
+	text-decoration:none;
+}
+li{
+	list-style-type:none;
+}
+
+/**Image dans texte**/
+
+img.gauche{
+	display:block;
+	float:left;
+	margin: 2%;
+}
+						/**Nous avons créé des class dans le html pour appliquer le css selon si on veux que l'image sois centrer ou qu'elle flotte à droite ou à gauche du texte**/
+img.droite{
+	display:block;
+	float:right;
+	margin: 2%;
+}
+
+img.centre{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:2%;
+	margin-top: 2%;
+}
+
+/**Infobulle : on part sur un principe d'infobulle qui s'affiche au survol du lien concerner, et on indique sa position par rapport au lien.**/
+
+a.infobulle{
+	position:relative;
+}
+ 
+a.infobulle:hover{
+	z-index:100;
+}
+ 
+a.infobulle span{
+	display: none
+}
+ 
+a.infobulle:hover span{
+	display:block;
+	position:absolute;
+	left:2em; 
+}
+
+/**Retour haut de page**/
+#retour{
+	display:block;
+	background-size: 100% auto;
+	background-repeat:no-repeat;
+	position:fixed;
+	bottom: 2%;
+	right:2%;
+	width:50px;
+	height:50px;
+}

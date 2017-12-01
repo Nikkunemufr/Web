@@ -1,0 +1,17 @@
+p.grenouilles{
+	padding:0px;
+	margin:0px;
+	line-height:0%
+}
+img{
+	border-width:1px;border-style:solid;
+}
+
+h1, body{
+	text-align: center;
+}
+
+section{
+	width:700px;
+	border-style: solid;
+}

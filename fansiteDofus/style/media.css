@@ -1,0 +1,32 @@
+article.petitesImages{
+	width:100%;
+	text-align:center;
+}
+article.grandeImage{
+	width:1200px;
+	margin-right:auto;
+	margin-left:auto;
+	padding-bottom:2%;
+}
+.petitesImages img{
+	width:120px;
+	height:75px;
+	border-style: solid;
+	opacity: 0.2;
+
+}
+.grandeImage img{
+	width:100%;
+}
+
+.previous{
+	position:absolute;
+	left:50px;
+	top:300px;
+}
+
+.next{
+	position:absolute;
+	right:50px;
+	top:300px;
+}

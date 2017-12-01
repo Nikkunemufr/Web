@@ -1,0 +1,181 @@
+/**Style Général**/
+
+nav{
+	background: #150909;
+}
+#boutton{
+	background: url("image/ebene/menu_ebene.png") center center no-repeat;
+}
+#boutton:hover{
+	background: url("image/ebene/menu_ebene_hover.png") center center no-repeat;
+}
+
+nav a:hover{
+	color:#7c3636;
+}
+nav li li a{
+	border-top:1px solid white;
+}
+#retour{
+	background-image:url("image/ebene/retour_ebene.png");
+}
+#retour:hover{
+	background-image:url("image/ebene/retour_ebene_hover.png");
+}
+
+#page, body {
+	background-color: #150909;
+}
+
+h2{
+	color: white;
+}
+
+p{
+	color: #f29417;
+}
+a{
+	color: #ffad15;
+}
+/**page RP.html**/
+.calque-bg {
+	background-image: url("image/ebene/bg.jpg");
+}
+
+.calque-1 {
+	background-image: url("image/ebene/3.png");
+}
+
+.calque-2 {
+	background-image: url("image/ebene/2.png");
+}
+
+.calque-3 {
+	background-image: url("image/ebene/hero.png");
+}
+.calque-4 {
+	background-image: url("image/ebene/5.png");
+	background-position:top;
+}
+.calque-5 {
+	background-image: url("image/ebene/1.png");
+}
+
+#sommaire{
+	background: radial-gradient(ellipse at center, #7c3636 0%,#150909 100%,#150909 100%);
+	box-shadow: 0 0 5px white;
+	width:600px;
+	padding: 1%;
+	margin:1%;
+}
+section{
+	padding:1%;
+	margin: 1%;
+	border-top: thin solid #7c3636;
+}
+/**page contact.html**/
+#fondcontact{
+	position:fixed;
+	top:0;
+	right:0;
+	background: radial-gradient(ellipse at center, #7c3636 0%,#150909 100%,#7c3636 100%);
+	width:100%;
+	height:100%;
+	z-index:-100;
+}
+
+fieldset {
+	background:white;
+}
+form h2{
+	color: #7c3636;
+}
+form h3{
+	color:grey;
+}
+
+input,textarea {
+	border: 1px solid #ccc;
+	color: grey;
+}
+
+.boutton {
+	background-color: #7c3636;
+	color: black;
+}
+
+#barre_de_progession li {
+	color: white;
+}
+#barre_de_progession li:before {
+	background: white;
+	color: black;
+}
+
+#barre_de_progession li:after {
+	background: white;
+}
+
+#barre_de_progession li.active:before,  #barre_de_progession li.active:after{
+	background: #7c3636;
+	color: black;
+}
+
+#infocontact {
+	text-align:center;
+	font-size:10px;
+	margin-bottom:2%;
+}
+#social a {
+	border: 2px solid transparent;
+	padding: 15px;
+}
+#social a:hover {
+	border-radius: 45%;
+}
+#social a:not(:first-child) {
+	margin-left: 1.5%;
+}
+#social a:nth-child(1) {
+	background:url("../image/social/facebook.png") no-repeat center;
+	border-bottom-color: #3b5998;
+}
+#social a:nth-child(2) {
+	background:url("../image/social/twitter.png") no-repeat center;
+	border-bottom-color: #00a0d1;
+}
+#social a:nth-child(3) {
+	background:url("../image/social/google+.png") no-repeat center;
+	border-bottom-color: #db4a39;
+}
+#social a:nth-child(4) {
+	background:url("../image/social/pinterest.png") no-repeat center;
+	border-bottom-color: #c8232c;
+}
+#social a:nth-child(5) {
+	background:url("../image/social/youtube.png") no-repeat center;
+	border-bottom-color: #c12025;
+}
+/**Page carte interactive**/
+.content p{
+	color: #b84545;
+}
+.popup h2{
+	color: #7c3636;
+	text-align:center;
+	border: 1px solid #7c3636;
+}
+.content li{
+	color:grey;
+}
+.popup .close {
+	color: #7c3636;
+}
+
+.popup .close:hover {
+	color: #b84545;
+}
+
+.popup {
+	background: white;
+}

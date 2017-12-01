@@ -1,0 +1,11 @@
+article{
+  width:400px;
+  height:auto;
+  border:10px solid gold;
+  margin:5%;
+  display:inline-block;
+}
+
+.details{
+  display:none;
+}

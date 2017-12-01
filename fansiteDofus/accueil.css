@@ -1,0 +1,220 @@
+/**Style de la page**/
+
+iframe{
+	display:block;
+	height:255px;
+	width:450px;
+	margin:5% auto 0 auto;				/**Vidéo dans le block trailer**/
+	border: 10px solid white ;
+	border-radius: 5px;
+	box-shadow:0 0 2em black;
+}
+section{
+	border:none;
+	margin:0;
+	padding:0;
+	box-shadow: 0 -2px 5px black inset;
+	position: relative;			/**Ombre de style entre les section**/
+	overflow: hidden;
+}
+/**Separation sympa entre les sections**/
+.separation{
+	background: url(image/accueil/top-block.png) no-repeat center top transparent;
+	max-width: 448px;
+	height: 54px;					
+	margin: 0 auto;
+}
+/**Fond sur les differentes section**/
+#trailer{
+	background: url(image/accueil/bg-block1.jpg) no-repeat center top #01c2d4;
+	min-height: 582px; /**Hauteur de l'image afin qu'on la voie en entier**/
+	text-align:center;						
+	text-shadow: 0 0 10px black;
+}
+
+#monde{
+	background: url(image/accueil/bg-block2.jpg) repeat center top transparent;
+}
+
+#classe{
+	background: url(image/accueil/bg-block3.jpg) repeat center top transparent;
+}
+
+#bestiaire{
+	background: url(image/accueil/bg-block4.jpg) repeat center top transparent;
+}
+
+#combat{
+	background: url(image/accueil/bg-block5.jpg) repeat center top transparent;
+}
+
+#quete{
+	background-color: black;
+}
+
+#metier{
+	background: url(image/accueil/bg-block7.jpg) repeat center top transparent;
+}
+
+#commu{
+	background: url(image/accueil/bg-block8.jpg) repeat center top transparent;
+}
+
+#evennement{
+	background: url(image/accueil/bg-block9.jpg) repeat center top transparent;
+}
+
+/** Style général des textes, organisant une hierachie lisible**/
+p{
+	color:white;
+	font-size:15px;
+}
+
+h2{
+	background:none;
+	border:none;
+	color:#faff76;
+	text-transform:uppercase;
+	text-shadow: 0 0 4px black;
+	font-size:40px;
+}
+
+h3{
+	background:none;
+	border:none;
+	color: #2ea8fb;
+	font-size:20px;
+}
+/**Permet de mettre l'image a gauche et le texte a droite comme si il y avais deux parties a l'interieur de la section. Evite que le texte passe sous l'image. De plus, ceux-ci se partage la section en partie égale**/
+
+.contenu{
+	height: auto;
+	width: 100%;
+	display: flex;
+}
+.image{
+	width:50%;
+}
+.image img{
+	width:80%;
+	height:auto;
+}
+.texte{
+	width:50%;
+	padding:2%;
+}
+.texte img{
+	width:auto;
+	height:auto;
+}
+/**Carrousel des personnages**/
+#slider {
+	width:543px;			/**Représente 3 fois la taille d'image d'un personnage**/
+	height: auto;
+	overflow: hidden;		/**Pour cacher les autres personnages de facon a ce qu'on en vois que 3 **/
+	background-color: rgba(0,0,0,0.4);
+}
+
+@keyframes slide {
+	0% { left: 0%; }
+	8% { left: 0%; }
+	16% { left: -100%; }
+	24% { left: -100%; }
+	32% { left: -200%; }
+	40% { left: -200%; }			/** Deplacement dans mon slider en fonction de la largeur de <figure>**/
+	48% { left: -300%; }
+	56% { left: -300%; }
+	64% { left: -400%; }
+	70% { left: -400%; }
+	78% { left: -466.66%; }
+	86% { left: -466.66%; }
+	94% { left: -566.66%; }
+	100% { left: -566.66%; }
+
+
+}
+
+
+#slider figure {
+	position: relative;
+	width: 666.67%;
+	margin: 0;
+	left: 0;
+	font-size:0;	/** Permet d'éviter les decalages**/
+	float:left;
+	animation: 20s slide infinite; /**appel a mon keyframes afin d'annimer le deplacement en fonction de celui ci**/
+	padding: 10px;	/**Permet d'afficher le personnage sur sa stelle**/
+}
+
+#slider figure img{ 
+	padding:5px 0 5px 0;		/**Eviter que la stelle soit coupé**/
+	background: url(image/accueil/bg-carousel.png) no-repeat center 136px;
+}
+
+/**Afficher legende**/
+#familier li {
+	visibility:hidden;
+	display:inline-block;
+	bottom:160px;
+	padding:2px;
+	background-image: linear-gradient(90deg, rgba(46, 168, 251, 0.7) 0%, rgba(46, 168, 251, 0.7) 0%, #4d4485 100%);
+	border: 2px solid white;
+	border-radius: 2px;
+}
+#p1{
+	position:relative;
+	left:-40px;
+}
+#p2{
+	position:relative;
+	left:-120px;
+}
+#p3{
+	position:relative;
+	left:-160px;
+}
+#p4{
+	position:relative;
+	left:-180px;
+}
+#p5{
+	position:relative;
+	left:-220px;
+}
+
+#dofus li {
+	visibility:hidden;
+	display:inline-block;
+	bottom:120px;
+	padding:2px;
+	background-image: linear-gradient(90deg, rgba(46, 168, 251, 0.7) 0%, rgba(46, 168, 251, 0.7) 0%, #4d4485 100%);
+	border: 2px solid white;
+	border-radius: 2px;
+}
+
+#p6{
+	position:relative;
+	left:0;
+}
+#p7{
+	position:relative;
+	left:0;
+}
+#p8{
+	position:relative;
+	left:0;
+}
+#p9{
+	position:relative;
+	left:0;
+}
+#p10{
+	position:relative;
+	left:0;
+}
+#p11{
+	position:relative;
+	left:0;
+}
+
+

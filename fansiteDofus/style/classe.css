@@ -1,0 +1,57 @@
+body{
+	color:gold;
+}
+
+p{
+  color:gold;
+  text-align:center;
+}
+
+/*Premier div qui contient les symboles et logos de classes à cliquer*/
+#selectclasse{
+	max-width:841px; /*A modifier pour changer l'empilement des symboles de classe*/
+	margin-left:auto;
+	margin-right:auto;
+}
+/*Style des div symboles de classes*/
+#selectclasse div{
+	width:140px;
+	height:140px;
+	display:inline-block;
+	vertical-align:top;
+	margin-top:2px;
+}
+
+/*Style des logos*/
+#selectclasse div img{
+	margin-top:40px;
+	margin-left:6px;
+  opacity:0;
+}
+
+/*Style de l'interface qui présente le personnage*/
+#interface{
+	display:none;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	max-width:1130px;
+	min-height:508px;
+	margin-top:3%;
+	margin-right:auto;
+	margin-left:auto;
+}
+/*aside est la partie gauche de l'interface qui contien le titre et l'histoire de la classe*/
+#interface aside{
+	position:relative;
+	top:50px;
+	left:5%;
+	/*background-color:red;*/
+	width:30%;
+}
+
+aside p{
+  color:gold;
+  text-align:left;
+}
+
+

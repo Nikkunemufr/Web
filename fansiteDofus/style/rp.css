@@ -1,0 +1,34 @@
+#banniere{
+height: 800px;
+overflow: hidden;
+position: relative;
+}
+
+.calque {
+background-position: bottom center;
+background-repeat: no-repeat;
+width: 100%;
+height: 800px;
+position: fixed;
+z-index: -1;
+}
+
+#sommaire{
+
+width:600px;
+padding: 0 1%;
+}
+h2,h3{
+	text-align:center;
+	padding:0.2%;
+}
+#banniere, .calque {
+min-height: 800px;
+}
+
+.contenu{
+padding:5%;
+}
+
+
+

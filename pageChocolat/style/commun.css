@@ -1,0 +1,51 @@
+html { 
+  	font-family: purisa , arial, helvetica, sans-serif;
+  	background-image:url("../fonds/fond6.jpeg"); 
+  	color:#512303;
+   }
+  
+body { 
+	background-color: ivory;
+  	width: 70%;
+  	margin: auto;
+  	padding:5%
+   }
+ 
+ 
+header {
+	text-align:center;
+	color:white;
+	background-image: url(../images/banniere.jpg);
+	height:125px;
+	font-size:25px;
+	padding-top:5px;	
+    }
+
+
+h3 {	text-align:center;
+	font-size: 40px;
+
+	}
+nav li{    /* des puces coeur seulement pour le menu */
+ 	list-style-image: url(../images/icone.jpg);
+}
+
+/* retour haut de page */
+.retour {
+	
+	width:80px;
+	margin-left: 45%
+	}
+
+/* le menu*/
+a{  color: red;
+    text-decoration: none}
+
+.chocoretour img{
+	
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+	width: 50px;
+}
+

@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/x-icon" href="../image/favicon.ico" />
+	<link rel="stylesheet" href="../theme/turquoise.css" id="theme">
+    <link rel="stylesheet" href="../style/commun.css">
+    <link rel="stylesheet" href="../style/menu.css">
+    <link rel="stylesheet" href="../style/carte.css">
+    <title>Dofus fansite - Histoire</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="../javascript/retour_haut_de_page.js"></script>
+    <script type="text/javascript" src="../javascript/menu.js"></script>
+	<script type="text/javascript" src="../javascript/changement_theme.js"></script>
+  </head>
+
+  <body id="haut">
+
+    <!-- menu de navigation-->
+    <nav>
+      <a href="javascript:;" class="menuclose"></a>
+	
+      <ul>
+        <li><a href="../accueil.html">Accueil</a></li>   		
+        <li><a class="deroulant">L'Histoire</a>
+          <ul class="submenu">
+            <li><a href="../pages/rp.html">Les Tomes</a></li>
+            <li><a href="#">Carte intéractive</a></li>
+          </ul>
+        </li>     
+        <li><a class="deroulant">L'Univers</a>
+          <ul class="submenu">
+            <li><a href="../pages/jeu.html">Le Jeu</a></li>
+            <li><a href="../pages/tutoriel.html">Tutoriels</a></li>
+          </ul>
+        </li> 	
+        <li><a href="../pages/classes.html">Les Classes</a></li>	
+        <li><a href="../pages/media.html">Media</a></li>   
+        <li><a href="../pages/contact.html">Contact</a></li>  		
+      </ul>
+	<button onclick="theme('../theme/pourpre.css')">Pourpre</button>
+	<button onclick="theme('../theme/turquoise.css')">Turquoise</button>
+	<button onclick="theme('../theme/ocre.css')">Ocre</button>
+	<button onclick="theme('../theme/ebene.css')">Ebene</button>
+	<button onclick="theme('../theme/ivoire.css')">Ivoire</button>
+	<button onclick="theme('../theme/emeraude.css')">Emeraude</button>
+	<button onclick="theme('../theme/licorne.css')">Licorne</button>
+    </nav>
+
+    <div id="flou"></div>
+    <a href="javascript:;" id="boutton"></a>
+    <div id="map">
+      <img src="../image/carte/map_dofus.jpg" alt="map dofus" usemap="#map_dofus"/>
+      <map name="map_dofus" id="map_dofus">
+      <!--informations de la map-->
+        <area shape="rect" alt="minotoror" coords="468,415,600,586" href="#minotoror" />
+        <area shape="rect" alt="frigost" coords="290,44,671,414" href="#frigost" />
+        <area shape="rect" alt="otomai" coords="217,481,427,807" href="#otomai" />
+        <area shape="circle" alt="naufrage" coords="542,711,92" href="#naufrage" />
+        <area shape="rect" alt="vulkania" coords="339,810,557,1034" href="#vulkania" />
+        <area shape="circle" alt="noel" coords="990,105,100" href="#noel" />
+        <area shape="circle" alt="bonta" coords="808,244,99" href="#bonta" />
+        <area shape="circle" alt="astrub" coords="1089,411,61" href="#astrub" />
+        <area shape="circle" alt="dragoeuf" coords="949,815,52" href="#dragoeuf" />
+        <area shape="circle" alt="koalak" coords="854,649,64" href="#koalak" />
+        <area shape="rect" alt="brakmar" coords="639,706,817,906" href="#brakmar" />
+        <area shape="rect" alt="sufokia" coords="1100,767,1329,1003" href="#sufokia" />
+        <area shape="rect" alt="cawotte" coords="1452,416,1678,623" href="#cawotte" />
+        <area shape="rect" alt="foret" coords="892,464,1052,582" href="#foret" />
+        <area shape="poly" alt="moon" coords="1568,676,1459,709,1403,779,1444,925,1605,992,1658,866,1633,706" href="#moon" />
+        <area shape="circle" alt="dopeul" coords="745,532,78" href="#dopeul" />
+        <area shape="poly" alt="amakna" coords="1035,621,1360,729,1455,611,1391,501,1222,429,1158,402,1069,524" href="#amakna" />
+        <area shape="rect" alt="grobe" coords="1520,94,1631,222" href="#grobe" />
+        <area shape="rect" alt="pandala" coords="1261,113,1519,413" href="#pandala" />
+        <area shape="poly" alt="dofus" coords="1830,932,1760,895,1664,898,1642,925,1617,1020,1679,1073,1880,1068,1872,961" href="http://www.dofus.fr" />
+      </map>
+    </div>
+
+    <!-- Toutes les popups indiquant l'histoire de chaque villes ainsi que ses heros-->
+
+    <div id="frigost" class="overlay">
+      <div class="popup">
+        <h2>L'île de Frigost</h2>
+        <a class="close" href="#carte">&times;</a>
+        <div class="content">
+	
+          <p><img class="gauche" src="../image/carte/comte.jpg" alt="comte" />Il y a un siècle environ, l'île de Frigost n'avait pas encore le masque froid et impitoyable qu'elle revêt aujourd'hui. À l'époque, ses terres étaient vertes et fertiles, ses forêts luxuriantes et ses champs dorés comme un bec de Tofu sous le soleil de midi. La position de l'île-continent, au nord d'Otomaï, lui garantissait un climat doux et tempéré, que seul l'hiver glacial venait troubler une fois l'an. Cette saison frigorifique, particulièrement rude, était la seule ombre qui planait sur Frigost. Mais elle était si intense qu'elle avait fini par donner son nom à l'île.
+          </p>
+          <p>
+			  C'est sur cette terre prospère que j'avais établi mon fief. Je me souviens encore des longues balades à travers champs, des baignades dans le lac, des parties de chasse dans la forêt...
+			  Aujourd'hui, tout cela n'est plus qu'un souvenir, hélas !
+          </p>
+          <p>
+			  Champs glacés, lacs gelés, forêts pétrifiées : voilà tout ce qu'il reste des paysages que j'ai connus jadis ! Ah, comme il y faisait bon vivre ! J'allais souvent me détendre dans les sources chaudes et profiter du confort offert par la centrale thermique. Car l'île était à la pointe de la technologie et le maire favorisait l'innovation et le progrès. Nous étions d'ailleurs particulièrement avancés en matière de techniques agricoles. Cultivarotateurs, mécanobêcheuses, charrues à vapeur : nous disposions de tout un tas de machines pour cultiver nos champs. La qualité de nos céréales était telle que les meilleurs boulangers de l'époque se les arrachaient ! Frigost était alors en tête du palmarès des plus grandes puissances agricoles du Monde. Mais malgré tous nos efforts, Amakna, sa rivale de toujours, menaçait de la supplanter.
+			  Aussi, notre maire décida-t-il un jour de lancer un grand concours : "Agriculture, inventons l'avenir de Frigost". L'objectif était de concevoir de nouvelles machines capables d'augmenter notre production de céréales. Si cela fonctionnait, nous pourrions montrer une bonne fois pour toutes à Amakna qui était le patron ! Nous ne le savions pas encore, mais ce concours allait être le déclencheur d'une série d'évènements qui causeraient notre perte... Ah, si seulement les Frigostiens n'avaient pas autant eu le goût de la compétition ! Si seulement, ils n'avaient pas été si orgueilleux ! Si seulement, je n'avais pas été aussi ambitieux...
+			  Hum... mais je me rends compte que je manque à tous mes devoirs !
+          <img class="droite" src="../image/carte/frigost.jpg" alt="frigost" />
+          </p>
+          <p>
+			  Je ne me suis même pas présenté ! Je suis...
+			  Jacquemart Tocante de Harebourg,
+			  Comte de Frigost !
+          </p>
+          <p>
+			  Mais vous pouvez m'appeler Comte Harebourg, c'est moins pompeux.
+			  Hum... Où en étais-je ? Ah, oui ! Le concours... Ce fameux concours. Avant de continuer mon histoire, vous devez savoir que j'étais un des plus grands génies de mon époque !
+			  Avec un bout de ficelle et deux clous, j'étais capable de vous construire une pompe hydraulique ! Mais le domaine dans lequel j'excellais par-dessus tout, c'était l'horlogerie. J'étais tellement mordu de pendules que les Frigostiens m'avaient surnommé le Montreur de montres.
+			  Aussi, lorsque le maire lança son concours, je proposai une idée révolutionnaire : la construction d'une clepsydre capable d'agir sur le climat et de réguler le froid de l'hiver !
+			  Tous les habitants de l'île s'attelèrent alors à la tâche. Il fallait les voir, ces braves gens, forger les rouages, souffler le verre, assembler la charpente... Un travail de titan ! Mais ça ne suffisait pas. Il me fallait l'aide d'experts, de professionnels du temps ! Je fis donc venir les meilleurs artisans du monde pour me seconder et, au terme d'une année de travail à s'en faire décoller les bandelettes, la Clepsydre fur achevée.
+
+          <img class="gauche" src="../image/carte/jiva.png" alt="jiva" />
+          </p>
+          <p>
+			  C'est à ce moment-là que tout dérapa. La gardienne de Javian, Jiva en personne, apprit que nous étions capables de manipuler le climat. Elle m'investit alors d'une mission de la plus haute importance, donc je tairai l'objectif par mesure de sécurité. Mais l'affaire était si grave qu'elle me confia le légendaire <a class="infobulle" href="#frigost">Dofus des Glaces,<span><img src="../image/carte/dofus_des_glaces.jpg" alt="ddg" /></span></a> pour la mener à bien ! En hiver 551, nous lançâmes donc l'opération "réchauffement climatique", avec la bénédiction de Jiva. La manœuvre fut un succès... du moins au début. Car nous ne le savions pas encore, mais en adoucissant les températures du mois de Descendre, nous avions interféré avec la mission de Djaul, son Gardien. Ce léger détail allait nous être fatal ! Tous les 31 Descendre, le démon avait en effet coutume d'affronter Jiva en combat singulier. Et cette année-là, il se fit lamentablement écraser ! Son excuse était toute trouvée : les températures trop clémentes avaient eu raison de lui !
+			  Rendu furieux par cette défaite, Djaul rumina sa vengeance pendant près d'un an. Lorsque l'hiver revint, il avait trouvé le moyen de neutraliser les effets de la Clepsydre et était prêt à riposter. Le 31 Descendre 552, il attaqua Jiva avec une violence jamais vue jusqu'alors. Leur combat de titans dura quatre jours, au terme desquels, la Gardienne de Javian, à bout de force, dut déclarer forfait. Alors pour protéger ses intérêts, elle eut recours à la plus odieuse des trahisons : elle nous vendit à Djaul et nous désigna comme seuls coupables de sa défaite passée ! Si le Gardien de Descendre s'en tenait à cette version, elle lui offrait Frigost afin qu'il y règne son partage.
+			  Le démon accepta, bien entendu. Et ce maudit 31 Descendre 552 marqua la fin de nos jours heureux ; le début d'un hiver impitoyable dans lequel nous serions condamnés à jamais...
+          </p>
+          <!--Monstres de frigost-->
+          <h2>Monstre notable de Frigost</h2>
+          <ul>
+            <li><figure><a href="#royalmouth"><img src="../image/carte/Royalmouth.jpg" alt="Royalmouth"/></a><figcaption>Royalmouth</figcaption></figure></li>
+            <li><figure><a href="#mansot"><img src="../image/carte/mansotroyal.png" alt="Mansot Royal"/></a><figcaption>Mansot Royal</figcaption></figure></li>
+            <li><figure><a href="#ben"><img src="../image/carte/benleripate.jpg" alt="benleripate"/></a><figcaption>Ben Le Ripate</figcaption></figure></li>
+            <li><figure><a href="#obsi"><img src="../image/carte/obsidiandre.png" alt="obsidiandre"/></a><figcaption>Obsidiandre</figcaption></figure></li>
+            <li><figure><a href="#fuji"><img src="../image/carte/fuji.png" alt="fuji"/></a><figcaption>Fuji Givrefoux</figcaption></figure></li>
+            <li><figure><a href="#korri"><img src="../image/carte/korriandre.png" alt="korriandre"/></a><figcaption>Korriandre</figcaption></figure></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="royalmouth" class="overlay">
+      <div class="popup">
+	      <h2>Le Royalmouth</h2>
+        <a class="close" href="#frigost">&times;</a>
+        <div class="content">
+          <img src="../image/carte/royalmouth_carac.png" alt="rm" />
+          <p>le Royalmouth est le boss du donjon, dès le début du combat le royal entre dans l'état "invulnérable" ,pour enlever cette état pousser l'eu dans le vide(avec tous les sort qui peuvent pousser) (faite attention ! si le royal reçoit des dommage contre un mur ou un allié ou autre chose sauf les dommage du sort, les joueur sur les lignes du royal sont ONE SHOOT directement) après avoir fait cela le royal perd son état pour 1 tour et ainsi de suite.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="mansot" class="overlay">
+      <div class="popup">
+        <h2>Le Mansot Royal</h2>
+        <a class="close" href="#frigost">&times;</a>
+        <div class="content">
+          <img src="../image/carte/mansot_carac.png" alt="mansot" />
+          <p>Le Mansot Royal est un boss de donjon. Il ressemble à un Fu Mansot avec une tête de vieux et une couronne.Il gagne de la vie, 1 PM, et des dommages a chaque fois qu'on tue un monstre, et met un état qui fait qu'on peut plus soin (sous risque de tuer beaucoup de joueur).Il invoque aussi des mansot.On le trouve uniquement dans l'Excavation du Mansot Royal ou en arène.Pour le battre il faut placer un joueur devant le MR (mansot royal) et régénerer ce joueur. 
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="ben" class="overlay">
+      <div class="popup">
+        <h2>Ben Le Ripate</h2>
+        <a class="close" href="#frigost">&times;</a>
+        <div class="content">
+          <img src="../image/carte/ben_carac.png" alt="ben" />
+          <p> Ben le Ripate est un boss de donjon.
+						  Description : Un gros Fantôme avec un chapeau, un crochet et une joli ceinture de pirate avec une tête de crâne applatie.
+          </p>
+          <p>
+						  Fonction : Etat Lourd et tape.
+          </p>
+          <p>
+						  Invocation : Il invoque des monstre de son donjon et des Hamrack.
+          </p>
+          <p>
+						  Où le Trouver : Disponible uniquement dans l'Epave du Grolandais Violent ou en arène
+          </p>
+          <p>
+  Comment le Battre : Attendez que ben invoque un Hamrack, enlever des PM au Hamrack pour qu'il en gagne, ainsi le hamrack se dirigera vert ben et exsplosera, cette explosion OS tous les perso sur les ligne de ben mais retire l'état du pirate pendant quatre tours.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="obsi" class="overlay">
+      <div class="popup">
+        <h2>L'Obsidiandre</h2>
+        <a class="close" href="#frigost">&times;</a>
+        <div class="content">
+          <img src="../image/carte/obsi_carac.png" alt="obsi" />
+          <p>L'Obsidiantre est un monstre, ou plus précisement un boss de donjon! Description: un gros craqueleurs de lave et de roche cuite, avec une tête de nuage ténébreux.
+          </p>
+          <p>
+						  Fonction: il tape du 900 en poussant d'une case.
+          </p>
+          <p>
+						  Invoquation: il reinvoque ses alliés mort, et il invoque d'affreuse Pougnettes diabolique.
+          </p>
+          <p>
+						  Où le trouver: on le trouve uniquement dans l'Hypogée de l'Obsidiantre (Obsidiantre est le boss de ce donjon) ou alors en arène.
+          </p>
+          <p>
+						  Comment le Vaincre: pousser un allier contre l'obsidiantre, les dommage de pousser le montrons "vulnérable" pendant 1 tour. ne surtout pas pousser votre allier contre l'obsidiantre si votre allier est déja devant lui et que vous vous trouver au CAC de votre allier sinon ONE SHOOT. 
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="fuji" class="overlay">
+      <div class="popup">
+        <h2>La Fuji Givrefoux</h2>
+        <a class="close" href="#frigost">&times;</a>
+        <div class="content">
+          <img src="../image/carte/fuji_carac.png" alt="fuji" />
+          <p>
+						  La Fuji n'est pas en état invulnérable. Elle possède deux sorts d'attaque: Le premier est au contact et OS automatiquement la cible: celà lui permet d'invoquer aléatoirement un monstre. Le second est uniquement en diagonale (comme les Kamis Givrefoux) mais tape l'ensemble des personnages situés sur la diagonale (avec, à priori, un malus de 20% d'érosion). Ce sort est en vol de vie; la portée est grande mais modifiable. Elle a également un sort de soin de 500/800 à environ 4 PO.
+          </p>
+          <p>
+						  La Fuji possède également un sort de boost : quand vous tuez un monstre, tous les autres monstres gagnent 1 PM pour un tour. La Fuji et le Tengu gagnent, en plus, 1000 dommages pour un tour.
+          </p>
+          <p>
+						  Il faut donc éviter à tout prix le contact avec la Fuji donc prévoyez un personnage pour lui retirer des PM et/ ou la repousser à tout les tours. Pendant ce temps faites le ménage : attention depuis l'inversion des maps il est devenu délicat d'esquiver les coups.
+          </p>
+          <p>
+						  Une fois le ménage terminé attaquez vous à la Fuji puis terminez par le Tengu 
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="korri" class="overlay">
+      <div class="popup">
+        <h2>Le Korriandre</h2>
+        <a class="close" href="#frigost">&times;</a>
+        <div class="content">
+          <img src="../image/carte/korri_carac.png" alt="korri" />
+          <p>Commencez par tuer le Korriandre en premier, afin d’éviter qu’il ne vous pousse lui et son invocation sur les glyphes, boostez-vous au premier tour et ensuite frappez le tout en essayant de garder à distances ses alliés et en évitant de terminer votre tour sur une glyphe. Le mieux et de le tuer en 1 tour, cependant si vous n’avez pas une grosse force de frappe vous pouvez mettre un peu plus de tour mais ne trainez pas trop car la map se remplis peu à peu de glyphes. Une fois le Korriandre achevé les glyphes seront bien sur toujours présentes. Vous allez maintenant vous attaquer aux monstres qui accompagnent le Korriandre en gardant les inoffensifs Fongeur pour la fin. Faites très attention à ne pas frapper les Merulettes avec un sort car sinon toute votre team retournera à sa position initiale et dans ce cas tous les personnages se retrouveront sur un case glyphée, et ce sera la mort assurée pour toute votre team.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--Fin de la présentation des monstres de frigost-->
+    <div id="minotoror" class="overlay">
+      <div class="popup">
+        <h2>L'île du Minotoror</h2>
+        <a class="close" href="#carte">&times;</a>
+        <div class="content">
+          <p><img class="gauche" src="../image/carte/mino.png" alt="mino" />Vue du ciel, cette petite île se présente sous la forme d'un Minotoror. Vous y trouverez des plages ainsi qu'une forêt de bambou. Située au centre de l'île, celle-ci vous donnera accès à l'entrée du célèbre labyrinthe du Minotoror.
+          </p>
+          <p>
+			  Une fois à l'intérieur, vous aurez affaire aux autres membres de la famille. Apprêtez-vous alors à y rencontrer le Mominotor, ou encore le Deminoboule !
+          </p>
+          <p>
+			  Pour vous rendre sur l'île du Minotoror, il vous faudra passer le territoire des Dopeuls. Là, moyennant finance, un aventurier vous y emmènera en bateau.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="otomai" class="overlay">
+      <div class="popup">
+        <h2>L'île d'Otomaï</h2>
+        <a class="close" href="#carte">&times;</a>
+        <div class="content">
+          <p><img class="gauche" src="../image/carte/otomai.png" alt="otomai" />Comme son nom l'indique, c'est sur cette île que réside Otomaï, un des plus illustres personnages du Monde des Douze. Ce savant, un peu fou il faut l'avouer, s'est exilé ici pour pratiquer des expériences secrètes, parfois controversées... Il faut dire que les résultats sont souvent cocasses ! Préparez-vous à y rencontrer des créatures plus étranges et inattendues les unes que les autres, comme le fameux Bitouf, mélange improbable entre un oiseau et une noix de coco.
+          </p>
+          <p>
+			    Perché en haut de son Arbre Hakam, Otomaï vous donnera plus d'informations sur le passé de l'île et sur ses enjeux. Il vous confiera également des quêtes comme celle de « L'Éternelle Moisson » qui vous permettra d'obtenir le Dofus Ocre qu'il détient !
+          </p>
+          <p>
+			    Bien d'autres personnalités peuplent l'île. Le Professeur Fournesol et le Docteur Nauh solliciteront probablement votre aide. Vous aurez peut-être aussi l'occasion de faire connaissance avec Crocodaïle Dandi, connu pour ses tentatives d'hypnoses sur les Sangliers des Plaines et pour ses sous-vêtements coquins cousus dans des écailles de Crocodailles.
+          </p>
+          <p>
+			    L'île d'Otomaï est aussi connue pour sa géographie variée. Vous y trouverez notamment la plage de Corail, les plaines herbeuses ou encore la Tourbière sans fond, véritable contrée marécageuse dans laquelle est retenue prisonnière une dangereuse créature...
+          </p>
+          <p>
+			    N'hésitez pas à visiter aussi les laboratoires du savant, accessibles grâce à des passages secrets. D'ailleurs, si vous voulez vous déplacer avec plus de facilité, sachez qu'il existe ici un moyen de transport particulièrement original : le Scaéroplane, un engin volant créé à partir de carapace de Scarafeuille !
+          </p>
+          <p>
+			    Mais si Otomaï est devenue l'île de prédilection de nombreux aventuriers, ce n'est pas seulement pour ses plages de sable fin, ni pour son climat accueillant. En effet, Otomaï vous donne l'occasion de réinitialiser vos caractéristiques ainsi que vos sorts.
+          </p>
+          <p>
+			    Une chose est sûre, si vous avez besoin de nouveauté, vous ne risquez pas d'être déçu !
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="naufrage" class="overlay">
+      <div class="popup">
+        <h2>L'Île des Naufragés</h2>
+        <a class="close" href="#carte">&times;</a>
+        <div class="content">
+          <p>
+			  Ceux qui ont voulu se rendre sur l'île d'Otomaï connaissent bien cet endroit. C'est ici que vous échouerez après avoir parlé au capitaine Kradoc, censé vous mener sur l'île du plus célèbre alchimiste que le Monde des Douze ait jamais connu. D'ailleurs, on peut dire que l'île porte bien son nom !
+          </p>
+          <p>
+			  Une fois arrivé sur cette terre, il vous faudra attendre que le Capitaine ait réparé son navire pour pouvoir la quitter. Pour cela, vous allez devoir lui fournir les objets nécessaires.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="vulkania" class="overlay">
+      <div class="popup">
+        <h2>L'Île de Vulkania</h2>
+        <a class="close" href="#carte">&times;</a>
+        <div class="content">
+          <p><img class="gauche" src="../image/carte/grazmera.png" alt="grazmera" />Chaque été, quand le soleil pointe le bout de son nez, vient le temps pour l'Agence Touriste d'envoyer les aventuriers vers une destination de rêve ou presque ! L'Île de Vulkania pourrait être le lieu de vacances idéal : explosions de Krokilles, balades au Phare Niente, combats épiques contre des monstres légendaires Pourtant, ce voyage est réputé pour être tout, sauf de tout repos ! À moins que ce ne soit le repos éternel que vous cherchiez Quel que soit votre niveau, vous y trouverez votre compte (les monstres de l'île se chargeront de vous le régler). N'ayez pas peur d'affronter le climat torride, la mer saura peut-être vous apaiser, sinon un bar vous permettra d'étancher votre soif !
+          </p>
+          <p>
+			  Situé au sud de l'Île d'Otomaï, l'archipel de Vulkania a été découvert par deux géologues Enutrofs, Liselle de Richeterre et Otto Brikenbrok. Après une courte période d'exploration, le projet d'un parc naturel s'est imposé de lui-même : un cadre aussi exceptionnel devait être présenté au public ! Toutefois, suite au réveil imprévu des seigneurs de l'île, Grozilla et Grasmera, les organisateurs ont dû fermer momentanément le site. Il faut dire que les spéléologues amateurs venus visiter les cavernes n'appréciaient pas plus que ça de se faire croquer par les deux monstres.
+          </p>
+          <p>
+			  L'intervention opportune de l'Agence Touriste a permis la réouverture du parc. Avec quelques aménagements, la présence de Grozilla et Grasmera est même devenue la principale attraction de Vulkania ! Comme le dit Hanniboul Smisse, le responsable de l'agence : « D'un mal peut toujours sortir un bien, et le vôtre m'intéresse. »
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="noel" class="overlay">
+      <div class="popup">
+        <h2>L'Île de Nowel</h2>
+        <a class="close" href="#carte">&times;</a>
+        <div class="content">
+          <p>La mystérieuse Île de Nowel n'est accessible qu'une fois l'an... À l'approche des fêtes de fin d'année, l'île de glace délaisse son manteau de brume et de neige, et laisse les navires approcher... avant de s'éloigner à nouveau au début du mois de Javian. Les créatures qui y vivent offrent de nombreux cadeaux à ceux qui parviennent à les battre !
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="bonta" class="overlay">
+      <div class="popup">
+        <h2>Bonta</h2>
+        <a class="close" href="#carte">&times;</a>
+        <div class="content">
+          <p>
+          <img class="gauche" src="../image/carte/bonta.jpg" alt="bonta" />Située au nord-ouest des plaines de Cania, cette magnifique et vaste cité fortifiée faisait la fierté des honnêtes défenseurs de la paix et du bien. Longtemps exposée aux attaques des habitants de la cité ennemie Brâkmar, ses défenses et le courage de ses habitants lui ont permis de ne jamais céder. Mais les temps ont bien changé. La corruption aidant, certains des défenseurs de la justice et de l'ordre qu'étaient les dirigeants de cette cité ont progressivement pris leurs distances avec le code de conduite qu'ils avaient juré de respecter.
+          </p>
+          <p>
+			  Aujourd'hui, les habitants de la cité de Bonta sont partagés entre leur quête du bien, la défense des opprimés et la soif de pouvoir. De nombreuses dissensions ont commencé à apparaître au sein même des dirigeants de Bonta. Certains, aveuglés par leur fanatisme, cherchaient à enrôler de force les indécis. Tout ceci était bien évidemment contraire à la doctrine des habitants de Bonta, habitués à défendre les opprimés et à diffuser la sainte parole autour d'eux.
+          </p>
+          <p>
+			  De cette guerre intestine est apparue une scission des groupes armés de Bonta en différentes milices rivales, parfois contraintes d'unir leurs forces pour résister aux attaques des habitants de la cité rivale : Brâkmar. Mais Bonta n'en reste pas moins une cité très agréable à visiter, surtout si vous avez l'intention de rejoindre le régime actuel et de renforcer ainsi les forces armées déjà présentes dans la ville.
+          </p>
+          <p>
+			  Une série de quêtes vous seront proposées pour vous initier aux principes de l'idéologie bontarienne et accroître votre rang au sein des troupes. Une fois ces formalités remplies, vous devriez avoir le temps de visiter plus en détail la ville ! Vous pourrez constater qu'elle est bien organisée en différents quartiers regroupant certains corps de métiers.
+          </p>
+          <p>
+			  Il est cependant facile de s'y perdre, et il ne faudra donc pas hésiter à demander sa direction au premier milicien ou passant venu.
+          </p>
+          <p>
+			  Si vous rejoignez la cause des habitants de Bonta, cette cité en apparence bien tranquille constituera le point de départ de nombreuses aventures palpitantes. Et n'oubliez pas que, s'il est certain que vous y croiserez les plus grands justiciers et défenseurs des opprimés, vous y rencontrerez également des fanatiques, aveuglés par leur foi et leur quête du pouvoir.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="astrub" class="overlay">
+      <div class="popup">
+        <h2>Astrub</h2>
+        <a class="close" href="#carte">&times;</a>
+        <div class="content">
+          <p><img class="gauche" src="../image/carte/astrub.jpg" alt="astrub" />La cité d'Astrub est un lieu de passage obligé pour tout nouvel aventurier. Maître Anemo et sa montgolfière vous y conduiront depuis Incarnam. Située à quelques encablures de la mer d'Asse, à proximité du pont de Pandala et facilement accessible depuis Amakna, on peut s'y rendre en empruntant les routes suivies depuis de nombreuses années par les voyageurs et les marchands.
+          </p>
+          <h3>Un peu d'histoire</h3>
+          <p>
+			  Astrub fut longtemps un endroit inaccessible, abrité par des contreforts rocheux et escarpés. Tirant parti de cette position géographique avantageuse, un groupe de mercenaires avait pris l'habitude de s'y réunir pour échafauder ses plans, partir en expédition ou soustraire un hors-la-loi à l'attention de la justice. Ils se faisaient appeler La Bande à Brutas. Avec le temps, le campement devint village, puis une cité populeuse... et ce malgré le nom d'Astrub, anagramme de Brutas qui reste encore aujourd'hui peu engageant !
+          </p>
+          <p>
+			  La population originelle d'Astrub était composée essentiellement de mercenaires qui, après une vie bien remplie de rapines et de guérilla, optèrent pour une vie de père en famille plus tranquille. Reconvertis en artisans, ils vivaient naturellement en bonne entente avec les mercenaires de passage, qui se groupaient pour chercher aventure et kamas. Ceux-là consultaient régulièrement les avis de recherche diffusés par l'autorité locale, coutume qui est encore en vigueur aujourd'hui : le moyen idéal de voir grossir sa bourse !
+          </p>
+          <p>
+			  Cette situation géographie faisait donc l'affaire des mercenaires, mais aussi des Craqueboules. Bien vite, ces créatures des roches que l'on voyait rôder dans les parages enfiévrèrent l'imagination des esprits... à défaut d'enfiévrer autre chose.
+          </p>
+          <p>
+			  Les rumeurs les plus folles coururent sur Astrub. Par exemple une légende tenace veut que les Craqueboules d'Astrub portent les enfants nouveaux-nés d'Astrub et les déposent sur le pas de porte de leurs parents. La réalité est toute autre, car si la légende avait été vraie, on aurait tôt fait de servir la bouillie de nourisson façon Craqueboule dans les tavernes astrubéennes.
+          </p>
+          <p>
+			  Aujourd'hui, peu de mercenaires résident encore au sein de la cité. Nombre d'entre eux ont déposé les armes et sont devenus de simples pères de famille, artisans et commerçants. C'est Fallanster, le jeune frère du roi Allister, qui est le responsable des mercenaires restants ainsi que du conseil d'Astrub, et ce depuis l'an 614.
+          </p>
+
+          <h3>Petit tour du propriétaire</h3>
+          <p>
+			  En effet, nulle part ailleurs dans le monde tu ne trouveras réunies autant de statues de divinités, et pour cause ! Il est dit que les âmes qui viennent s'incarner dans le monde descendent d'Incarnam pour se retrouver au pied de la statue de leur dieu. Les colosses de pierre s'offrent au soleil et à la vénération de leurs fidèles sur les places ensoleillées d'Astrub, et voient jaillir les êtres fraichement incarnés, au langage parfois fleuri, et aux manières parfois peu policées.
+          </p>
+          <p>
+			  C'est donc au coeur de la cité d'Astrub que les jeunes aventuriers font leurs premières armes. Il est d'ailleurs utile d'aller rencontrer les habitants d'Astrub : chaque disciple trouvera quelqu'un de sa propre classe à qui parler et qui lui confiera une première mission. 
+          </p>
+          <p>
+			  Les Hôtels de vente montrent une activité diversifiée et prospère, même si les ressources proposées ne sont pas de première qualité !!
+          </p>
+          <p>
+			  D'ailleurs, Hôtels de vente et Entrepôts dont régner dans la ville une odeur particulière, faite à la fois d'effluves d'abattoirs, de relents de nourriture et de fumier, à la fois boisée avec une pointe d'humus et de pourriture. Une rumeur persistante laisse penser que ces émanations nauséabondes proviennent des sous-sols d'Astrub et que ceux qui y sont exposés tombent malades...
+			  Il faut dire que les Enutrofs d'Astrub ont creusé des galeries souterraines sous la ville afin d'exploiter les filons miniers. Il est possible que les excavations aient dérangé des créatures belliqueuses ou qu'ils aient percé une poche de gaz infectieux, ou une fosse septique antidiluvienne... En tout cas les souterrains d'Astrub sont peu sûrs et je t'en déconseille la visite, même guidée.
+          </p>
+          <h3>Les lieux à visiter</h3>
+          <p>
+			  Si vous vous aventurez dans la forêt, vous y trouverez une grotte extrêmement fréquentée malgré sa petite taille. L'intérêt n'est ni artisanal ni historique : les dizaines d'aventuriers présents à toute heure du jour sont ici pour se disputer les groupes de Chafers, monstres que l'on avait pu croiser dans le cimetière d'Incarnam et reconnus par la communauté pour l'important gain d'expérience qu'ils rapportent aux débutants qui les vainquent.
+          </p>
+          <p>
+			  Non loin de là, vous pourrez remarquer sur le sol d'étranges traces de pas. Si vous les suivez, vous tomberez sur une zone que la plupart des monstres vivant dans la forêt préfèrent éviter. En effet celles-ci mènent à la clairière du terrible Homme Ours ! Si vous réussissez à vaincre votre peur et osez l'affronter, les ressources que vous obtiendrez vous seront très utiles afin de vous habiller de façon ridicule pour terroriser les habitants d'Astrub.
+          </p>
+          <p>
+			  Il se peut qu'une âme de mercenaire se cache en vous. Dans ce cas, la visite de la prison d'Astrub devrait vous ravir ! De nombreux avis de recherche sont affichés sur de petits panonceaux à l'entrée des geôles, et si vous souhaitez capturer et mettre derrière les barreaux de dangereux criminels (dont Frakacia), une récompense financière vous sera offerte. Vous aurez de plus la chance de voir s'entasser les condamnés derrière les grilles des cellules.
+          </p>
+          <p>
+			  Attention toutefois à ne pas vous attarder trop tard le soir dans cette forêt, et à ne pas sortir des sentiers battus, car vous risquez de faire la désagréable rencontre de bandits manchots ou pire... de Frakacia Leukocythine, bandit redoutable recherché pour ponctions illégales d'hémoglobine.
+          </p>
+          <p>
+			  Enfin, si vous vous sentez d'humeur plutôt sombre, l'église dévastée situé au nord de la ville devrait vous plaire. Depuis Descendre 640, l'intérieur de celle-ci a été rénové afin d'accueillir la statue de classe Roublard. Le calme et la sérénité de cette église sont appréciables, c'est un havre de paix par rapport aux rues de la cité, bouillonnantes d'activité. Deux passages secrets vous permettront de visiter Amakna d'une façon très originale et unique !
+          </p>
+          <h3>La faune et la flore</h3>
+          <p>
+			  Si vous descendez tout juste de l'ile d'Incarnam, la faune ne devrait pas trop vous surprendre. On retrouve en effet dans les différentes zones Astrubéennes des monstres semblables à ceux que l'on pouvait rencontrer sur Incarnam. Malgré cela, faites attention si vous décidez de vous y frotter ! Ici, les monstres ne sont pas affaiblis. Il faudra donc enfiler une panoplie adaptée avant de les combattre. Méfiance également si vous vous éloignez du centre, vous risquez de vous faire surprendre par les Craqueboules qui ont colonisé une zone rocheuse au nord-est de la ville, une ancienne exploitation minière.
+          </p>
+          <p>
+			  Ce qui frappe au niveau de l'environnement dans lequel on arrive, c'est la diversité des zones entourant la paisible cité. On peut flâner sur la plage des Calanques d'Astrub, batifoler dans les champs à tout près de la côte, ramasser des champignons et autres ressources dans la dense forêt ou bien se reposer au soleil dans les prairies d'Astrub.
+          </p>
+          <p>
+			  Deux zones situées au sud de la ville attireront votre attention : il s'agit du Coin des Tofus, où grouillent ces petites bestioles emplumées, et d'un endroit que votre âme de gothique saura apprécier, le Champ du Repos. Gargrouilles et Ouassingues y errent, au beau milieu des tombes. Cet endroit pourra cependant vous faire frissonner, on raconte qu'il est hanté par les âmes des aventuriers trépassés au combat...
+          </p>
+          <p>
+			  La flore est également très variée aux alentours d'Astrub. Les botanistes en herbe, ainsi que les alchimistes et les paysans trouveront leur bonheur dans les nombreuses espèces végétales. On y trouve une végétation tantôt dense, tantôt clairsemée, mais toujours verdoyante et colorée.
+          </p>
+
+          <h3>Donjons</h3>
+          <p>
+			  Deux premiers donjons vous donneront un aperçu de ce qu'est un donjon dans le monde des Douze. Ils vous permettront de découvrir et vous familiariser avec le fonctionnement de la plupart des donjons du monde. 
+          </p>
+          <p>
+			  Le donjon des champs, bucolique et fleuri au possible, vous permettra d'obtenir de nombreuses ressources utiles à la confection de parchemins de caractéristiques, néanmoins le Tournesol Affamé risque d'être un obstacle pour les aventuriers les plus faibles, qui pourraient bien visiter le Champ du Repos de façon involontaire. Toutefois, armé de vos Mitaines Mitées du Paysan, vous saurez, avec vos camarades, vaincre cette fleur maléfique ! 
+          </p>
+          <p>
+			  Situé tout au nord des Calanques d'Astrub, le donjon ensablé présente un cadre paradisiaque. Sable fin et blanc, mer turquoise et légère brise marine, on se croirait presque en vacances. Mais Mob L'Éponge, accompagné de ses fidèles Raul Mops et autres Pichons, se chargera de vous rappeler la dure réalité. Ce donjon est sympathique, mais il faut être bien armé pour oser affronter la petite éponge jaune et ses sbires !
+          </p>
+
+          <h3>Ambiance</h3>
+          <p>
+			  L'ambiance d'Astrub est assez décevante. On pourrait s'attendre à une ville chaleureuse, mais elle est en réalité très austère. En effet, ses habitants ne vous adresseront pas ou très peu la parole. Vous trouverez néanmoins un peu d'ambiance et de convivialité à la taverne, où, contrairement à Incarnam, on vous servira de la bière ! Malgré tout, les solitaires apprécieront le peu de bavards que l'on peut croiser dans la ville en dehors des heures de forte affluence. Seuls les autochtones seront intéressés par votre conversation et n'attendent qu'une seule chose : vous assigner une des nombreuses quêtes d'Astrub.
+          </p>
+          <h3>Le mot de la fin</h3>
+          <p>
+			  Astrub a nourri bien des fantasmes au fil des années passées sur la terre d'Amakna. De l'ancienne cité mercenaire, il reste très peu de choses. Il s'agit maintenant d'un carrefour important du monde des Douze, puisque tous les débutants sont appelés à commencer leur aventure à Astrub. Les paysages extrêmement variés vous feront aimer cette ville, mais de nombreux points viennent ternir le tableau, notamment la froideur des habitants qui la peuplent. C'est donc une ville à visiter en sortant des sentiers battus sans chercher à y faire de grandes rencontres !
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="dragoeuf" class="overlay">
+      <div class="popup">
+        <h2>Presqu'île des Dragoeufs</h2>
+        <a class="close" href="#carte">&times;</a>
+        <div class="content">
+          <p>Cette presqu'île est située au sud d'Amakna ; le seul moyen d'y accéder est de passer par un pont gardé par un homme en armes. Vous êtes jeune et fou, vous n'écouterez pas ses conseils. Vous irez jusqu'au village des Dragoeufs.
+          </p>
+          <h3>Un peu d'histoire</h3>
+          <p>
+			  L'histoire de ce village abandonné remonte à il y a bien longtemps. En effet, c'est dans cette contrée que les premiers habitants d'Amakna ont construit leur village, qui fut le tout premier d'Amakna. On le nomme aujourd'hui « le village primordial », pour le distinguer de l'actuel village, situé plus au nord.
+          </p>
+          <p>
+			  C'est Osamodas en personne qui a puni les habitants de ce village. Enfin, c'est ce qu'on raconte... Vous savez que les oeufs de Dragon sont très convoités dans notre Monde. Et les villageois auraient voulu élever des Dragoeufs dans le but de créer un Dofus !
+          </p>
+          <p>
+			  Bien vite, les Dragoeufs furent parqués et élevés en batterie. Les villageois sélectionnèrent les meilleures Dragueuses, et virent apparaître des oeufs de plus en plus gros, et beaux... jusqu'au jour où l'une d'elles pondit un oeuf écarlate. Unique ! Était-ce un Dofus ? Les villageois l'emmenèrent pour l'examiner sans se soucier des cris de protestation de la Dragueuse. Les cris montèrent comme une houle menaçante, mais après tout, ces Dragueuses n'étaient que des bêtes d'élevage !
+          </p>
+          <p><img class="gauche" src="../image/carte/dragoeuf.png" alt="dragoeuf" />
+			  On dit que les Dragoeufs se rebellèrent contre leurs maîtres. On dit que parmi eux se dressaient deux Dragons rebelles. On dit aussi que si ma tante en avait, on l'appellerait mon oncle. Une chose est sûre : le Dragoeuf a la dent dure, et les enfants sont pour eux très faciles à mâcher. Quant aux parents, brûlés à point, ils font un plat de résistance très correct.
+          </p>
+          <p>
+			  Une partie des Dragoeufs élut domicile sur la presqu'île qui porte désormais leur nom. La race des Dragoeufs s'est alors divisée en deux branches restées très proches : ceux de la surface et ceux qui continuèrent à vivre dans le Sanctuaire.
+          </p>
+          <p>
+			  Quant aux habitants, ils se sont exilés, ne pouvant faire face aux terribles "Dragoeufs", et se sont installés dans ce qui est aujourd'hui le village d'Amakna.
+          </p>
+
+          <h3>La presqu'île des Dragoeufs:</h3>
+          <p>
+			  Cette ravissante presqu'île est située au sud d'Amakna. Le seul moyen d'y accéder est de passer outre la mise en garde du guerrier qui la monte.
+			  Les brigands ont parfois tendance à rôder dans ce secteur... mais ils ne sont pas les pires à craindre. En effet, des légions de Dragoeufs se sont abattues sur ce coin de terre, pour le malheur de ses habitants. Il semblerait qu'un dofus maléficié soit à l'origine de ce fléau. En effet, tout aventurier sait qu'un Dofus est un oeuf de Dragon offert par un Dragon amoureux à l'élu(e) de son coeur. Or on peut s'étonner de ce qu'ils n'éclosent jamais : c'est en cela que réside toute la magie draconique ! C'est parce que l'esprit du Dragon est gardé captif dans sa coquille que ces oeufs sont si puissants. 
+			  Que des Dragons de taille réduite, et surtout aussi belliqueux, aient vu le jour est sans doute l'oeuvre d'un cerveau malfaisant et génial, ou d'un apprenti mage ayant abusé de ses pouvoirs.
+					
+          </p>
+          <h2>Le Sanctuaire des Dragoeufs:</h2>
+          <p>
+			  Un village peut en cacher un autre. Les ruines de l'ancien village d'Amakna, sur la presqu'île des Dragoeufs, cachent bien plus que ça. Elles sont les vestiges d'une histoire dramatiques. Les vestiges de la punition divine portée à un peuple trop orgueilleux. 
+			  Sous ce village, en effet, existe une immense caverne : le sanctuaire des Dragoeufs. Les Dragoeufs y vivaient jadis en paix. Un jour, des habitants d'Amakna découvrirent le santuaire et ses dragons. Alors, par génie ou par folie, ils eurent une idée démentielle. Je dirais même plus, ils eurent une démentielle idée. La première chose qui vint à leur esprits quand ils découvrirent l'existence de ce peuple de dragons et de leur sanctuaire protégé du regard des dieux fut un syllogisme : "Les Dragoeufs pondent des oeufs. Les Dofus sont des oeufs de dragons. Les Dragoeufs peuvent donc pondre des Dofus si on les aide." 
+          </p>
+          <p>
+			  La suite des évènements reste encore obscure aujourd'hui.
+          </p>
+          <p><img class="droite" src="../image/carte/dragoeufnoir.png" alt="dragoeufnoir" />
+			  Cet élevage, comme l'existence du Sanctuaire, furent gardés dans le secret le plus total. Et cette situation perdura pendant plusieurs générations. Vint un jour désastreux entre tous où les Dragoeufs n'acceptèrent plus qu'on joue avec leurs oeufs. Ils se révoltèrent donc, massacrant de-ci de-là leurs éleveurs. Il fallait au moins ça pour faire entendre leur mécontentement, après tout. 
+          </p>
+          <p>
+			  Les sages sentirent venir la fin, voire une faim dans le cas présent... L'entrée du Sanctuaire fut alors condamnée et un Kanojedo fut construit par-dessus pour dissimuler leurs répréhensibles activités. C'était sous-estimer le courroux des dieux !
+          </p>
+          <p>
+			  Dans un de ses manuscrits, l'éminent philosophe Platoun évoque cette triste période de l'histoire. On ne possède malheureusement plus que des fragments de ces manuscrits. Voici l'un d'eux.
+          </p>
+          <p>
+			  "Alors que le dieu des dieux, Osamodas, qui règne suivant les lois et qui peut discerner ces sortes de choses, s'apercevant du malheureux état d'une race qui avait été vertueuse, résolut de châtier les éleveurs de Dragoeufs pour les rendre plus modérés et plus sages. À cet effet, il réunit tous les dieux dans leur demeure, la plus précieuse, celle qui, située au centre de tout l'univers, voit tout ce qui participe à la génération, et, les ayant rassemblés, il leur dit..." La citation de Platoun finit sur ces mots. 
+          </p>
+          <p>
+			  Toutefois, on peut se douter qu'Osamodas parla à ses divins collègues. Et ce qui fut dit ce jour là n'était pas de bon augure pour les habitants d'Amakna. Le Sanctuaire furent rouvert par les dieux. Une vague de Dragoeufs en manque de vengeance et de massacre déferla sur le village d'Amakna... qui fut rapidement réduit en miettes. Les habitants les plus rapides purent courir se réfugier dans ce qu'on appelle aujourd'hui le château d'Amakna. Les moins rapides participèrent au festin des Dragoeufs, sous forme de saucisses et pâtes, le tout cuit à feu vif.
+          </p>
+          <p>
+			  Ainsi se termine ce chapitre de l'histoire du Sanctuaire des Dragoeufs. Un mystère demeure toutefois... Les éleveurs arrivèrent-ils tout de même à leurs fins ? Réussirent-ils à créer un Dofus ? Le mystère reste entier, total, et insondable. 
+          </p>
+
+          <h3>La faune et la flore</h3>
+          <p>
+			  Elle est entièrement composée de Dragoeufs, sortis de l'oeuf ou non, ils sont tous bon au combat et n'hésite pas à vous attaquer par suprise. Et ceci n'est pas seulement pénible, car ils sont partous !
+          </p>
+          <h3>Donjons</h3>
+          <p>
+			  Quand il s’agit de protéger ses Dragœufs chéris, Crocabulia y met du cœur ! Et vous ne ferez pas d’omelette de Dragoss… sans casser la Crocabulia. Encore faudra-t-il l’atteindre, car dans le Donjon des Dragœufs, vous ferez d’abord connaissance avec toute la famille :
+          </p>
+          <p>
+			      Des Dragoss, et qu’ils soient Blancs, Saphirs ou Éveillés, ils sont tous affamés ! Faites attention à leur souffle et à leurs météorites sous peine de finir K.O puis dévoré.
+			      Des Dragœufs de toutes sortes, aussi coriaces les uns que les autres. Si vous souhaitez cassez des œufs, il faudra vous armer de courage, et pas que…
+			      Des Dragœufs Guerriers, la virilité incarnée de ce donjon. Ils sont grands, costauds et armés ! Un coup de sabre bien placé et le tour est joué…
+			      Des Dragueuses, plus charmeuses que jamais : un clin d’œil, un sourire en coin et vous voilà avec un sourire béat. Pendant ce temps, un de ses alliés en profitera pour se faufiler derrière vous et s’occuper de votre cas.
+			      Des Dragœufs Volants, qui se déplacent avec une rapidité déconcertante ! Soyez vifs si vous espérez les faire chuter.
+			      Des Coquilles Explosives, qui risquent de tout exploser… dans tous les sens du terme !
+          </p>
+          <p>
+			  Dragoss, Dragœuf, Coquilles… tout cela est un peu flou pour vous ? Quant à leur reproduction, n’en parlons même pas ? Dina Tapio pourra vous renseigner.
+          </p>
+          <p>
+			  « Les dragueuses pondent des œufs. Lorsqu’elles sont fécondées par les Dragœufs guerriers, ces œufs donnent naissance à des Dragœufs immatures, qui pourront devenir des Dragoss ou des Dragœufs. Les œufs non fécondés finissent la plupart du temps en omelettes, mais certains deviennent des Coquilles explosives ou soignantes. Les versions explosives éclatent lorsqu’elles sont trop anciennes. »
+          </p>
+          <p>
+			  Mais la star du donjon, c’est bien entendu la flamboyante Crocabulia ! Une dragonne musclée, assez volage, mais surtout très puissante ! En plus, elle garde scrupuleusement le Dofus Vulbisqu’elle défend bec et ongles. Ils sont nombreux les aventuriers à se laisser tenter par ce donjon juste pour espérer repartir avec ce précieux… Ce n’est pas chose facile, mais comme on dit : « qui ne tente rien n’a rien » ! Vous aussi vous souhaitez tenter votre chance ?
+          </p>
+          <p>
+			  Pour ceux qui ne parviendraient pas à relever entièrement le défi, sachez tout de même que grâce aux ressources obtenues dans le donjon, vous pourrez fabriquer la Panoplie Dragœuf ou d’autres objets comme la Coiffe du Dragœuf Volant  ou les Dragocoiffes !
+          </p>
+          <p>
+			  Allez hop,hop, tous au Donjon ! Vous n’allez pas faire attendre une demoiselle qui cause la détresse tout de même ?
+          </p>
+
+          <h3>Ambiance</h3>
+          <p>
+			  Vous avez cru qu'il y ferait bon vivre ? Et bien vous vous trompez, le village des dragoeufs est d'une ambiance chaotique. Deux ou autres habitués du coin pourtant vous renseigneront sur l'histoire de l'ancien village. Seul les aventuriers passant par là pour visiter le Crocabulia attiré par le Dofus Vulbis mettront une pointe d'ambiance.
+          </p>
+
+          <h3>Le mot de la fin</h3>
+
+          <p>
+			  Amplit d'histoire, le lieux à bien vite déchanté et n'est plus ce qu'il était. Les aventuriers aguéris sont les seuls visiteurs réels du village et les autres touchent les vestiges avec leurs yeux où se font régulièrement attaqués par toutes ces coquilles si dangereuses. Il fût un temps néanmoins ou le village subit un tantinet d'activitée, quand Grozilla et Grasmera rendirent visite aux aventuriers il y a quelques années. 
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="koalak" class="overlay">
+      <div class="popup">
+        <h2>Montagne des Koalaks</h2>
+        <a class="close" href="#carte">&times;</a>
+        <div class="content">
+          <p><img class="gauche" src="../image/carte/koalak.png" alt="koalak" />
+			  Il était une fois quatre soeurs Sadidettes, curieuses et pas très sages qui aimaient batifoler sur la route de Cania, et se laisser conter fleurette par les garçons. Un jour, absorbées par leurs jeux innocents, elles furent entraînées par quelques gaillards feuillus, et la petite troupe s'engouffra dans un territoire encore inconnu, pas très loin des landes de Sidimotes... c'était il y a bien longtemps ! Ce qu'il advint des Sadidas, on l'ignore... Quant aux Sadidettes, tout ce qu'on sait à leur propos c'est qu'elles firent le serment de toujours rester des enfants malicieuses.
+          </p>
+          <p>
+			  C'est que, depuis quelques temps, ces jeunes Sadidettes avaient "cassé la graine" comme on dit chez les Sadidas : elles avaient renié l'enseignement des esprits de la Nature, au grand dam de leurs parents. Et là-bas, du côté de Sidimote, elles ont rencontré le beau et sémillant Skunk, un Eniripsa qui s'y connaît en potions et en plantes médicinales, toujours accompagné de sa Lapinotte Pourpre (dont le petit nom est Purpeul).
+          </p>
+          <p>
+			  Skunk est devenu l'éminence grise des quatres Sadidettes, leur mentor. Depuis, elles expérimentent avec lui mille et une façons de détourner la magie du dieu Sadida et de la déesse Eniripsa. Leur grande réussite est de maîtriser la magie élémentale au point de dominer chacune un des quatre éléments primordiaux, à l'instar des Dragons Éléments et des Maîtres Pandawushukas... On raconte à voix basse que Skunk aurait dérobé un objet précieux à une créature nommée Kouloss...
+          </p>
+          <p>
+			  Autrefois protégées des influences extérieures grâce à sa situation géographique, la montagne dû faire face à la soif de pouvoir de Skeunk. Ce forgemage passionné de science occulte déroba le Dofus que détenait le Kouloss. Mais l'objet en question n'était autre qu'une vulgaire contrefaçon... En tentant de percer les secrets de ce qu'il croyait être un véritable oeuf de Dragon, Skeunk ouvrit une brèche dans le massif de Cania. Dès lors, les Montagnes de Koalaks étaient accessibles au monde extérieur.
+          </p>
+          <p>
+			  Cette région particulièrement humide regorge de lacs et de marécages. Les Koalaks, créatures paisibles et herbivores, se nourrissent principalement de Kaliptus et de boisson chocolatée appelée « kakoalak ». Mais depuis l'ouverture de leur monde, leur comportement a bien changé... Devenus agressifs, ils combattent activement les touristes et apprentis guerriers de passage.
+          </p>
+          <p>
+			  Une autre espèce animale y vit également : les Dragodindes. Avec l'ouverture du monde, un village spécialisé dans l'élevage de ces créatures a vu le jour, plus précisément au coeur de la montagne. Si vous avez toujours rêvé de monter une Dragodinde, adressez-vous à Klako, grand ami d'Oshar Marif, le plus illustre éleveur de Dragodindes qui puisse exister. Klako vous procurera alors des filets afin de capturer ces passionnantes montures.
+          </p>
+          <p>
+			  La Montagne des Koalaks est également connue pour son cimetière primitif, véritable lieu pittoresque. Au nord, des lacs enchantés bordent le village des éleveurs de Dragodindes, tandis qu'au sud, des marécages nauséabonds forment un labyrinthe infesté de Boos et de Crocodailles. Et s'il vous prend la folle envie d'affronter des Koalaks, vous n'aurez qu'à rejoindre la forêt de Kalyptus !
+          </p>
+          <p>
+			  Néanmoins, les deux lieux qui intéressent avant tout les aventuriers sont bien évidemment l'antre de Kouloss ainsi que le repaire de Skeunk. Mais prenez garde, car pour arriver au dernier, il va vous falloir traverser la Vallée de la Morh'Kitu, contrée montagnarde infestée de redoutables Koalaks de haut niveau...
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="brakmar" class="overlay">
+      <div class="popup">
+        <h2>Brakmar</h2>
+        <a class="close" href="#carte">&times;</a>
+        <div class="content">
+          <p><img class="gauche" src="../image/carte/brakmar.jpg" alt="brakmar" />Située au sud-ouest des plaines de Cania et au sud des landes de Sidimote, cette cité bâtie sur un sol volcanique inspire la puissance. 
+          </p>
+          <p>
+			  Il y a longtemps, Hyrkul, adorateur de Djaul, construisit cette cité dans le but d'imposer la souveraineté de Djaul. Peu de temps après, Jiva et deux autres gardiens firent construire la cité de Bonta par des héros Amaknéens, afin de contrer la suprématie de cette nouvelle ville. Une terrible guerre éclata entre les défenseurs des deux cités adverses.
+          </p>
+          <p>
+			  Le code d'honneur des habitants et défenseurs de Brâkmar n'est fondamentalement pas différent de celui des partisans de Bonta. Les années de guerres destructrices ont appauvri les deux camps, et à de nombreuses occasions certains responsables n'ont pas hésité à faire passer leurs intérêts personnels avant ceux de leur cité, outrepassant les règles de conduite que les fondateurs des deux cités avaient imposées.
+          </p>
+          <p>
+			  Pour certains, les différences entre les politiques des deux cités sont devenues trop minces, ce qui les a amenés à rallier l'ennemi juré.
+          </p>
+          <p>
+			  Même si la cité de Brâkmar est restée au fil du temps le repaire des brigands et des roublards, elle a su attirer ceux qui recherchaient une alternative à la politique de plus en plus répressive de la cité de Bonta. La cité est toujours à la recherche de nouvelles recrues pour organiser une résistance farouche aux attaques de la cité ennemie.
+          </p>
+          <p>
+			  Si vous êtes capable d'assumer les responsabilités qui vous seront confiées au fil de votre formation à Brâkmar, vous devriez rapidement gravir les échelons. Qui sait, peut-être que vous aussi vous prendrez goût au pouvoir ?
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="sufokia" class="overlay">
+      <div class="popup">
+        <h2>Sufokia</h2>
+        <a class="close" href="#carte">&times;</a>
+        <div class="content">
+          <p><img class="gauche" src="../image/carte/sufokia.jpg" alt="sufokia" />
+			  Sufokia est une magnifique cité dont les pontons de bois s'avancent loin dans la mer d'Asse ; le panorama ravit une foule de pêcheurs qui sentent bon la marée et la Greu-vette. Pour les amateurs d'architecture originale et d'eau salée, c'est un site à visiter absolument !
+          </p>
+          <h3>Un peu d'histoire</h3>
+          <p>
+			  On raconte que Sufokia aurait été bâtie par l'astucieux Buzinessemanh pour que les guerriers de Bonta et Brâkmar se détournent de leurs sempiternelles querelles, s'offrent des vacances et dépensent leurs kamas.
+          </p>
+          <p>
+			  Malheureusement pour lui, il avait sans doute prononcé là ses derniers mots. Buzinessmanh ne fut jamais revu... ni vivant, ni mort.
+          </p>
+          <p>
+			  L’histoire des Steamers est étroitement liée à celle de la ville de Sufokia. On a toujours raconté que la cité ne serait en fait que la partie immergée d'une immense ville. Jusque-là, les recherches menées n'ont jamais donné de résultats concluants, mais les anciens restaient formels : « la cité n'a pas encore révélé tous ses secrets. »
+          </p>
+          <p>
+			  Ce peuple refît surface en l'an 642, en près d'un mois ils rebatissent la cité de Sufokia lui redonnant toute sa splendeur lui redonnant ainsi un incroyable souffle de vie !
+          </p>
+          <p>
+			  Peu d'informations ont été donnés pour l'instant sur l'histoire passée de cette ville mais l'on peut-être sûr que les différents habitants vous feront l'honneur de vous renseigner.
+          </p>
+          <h3>Petit tour du propriétaire</h3>
+          <p>
+			  Depuis quelques temps, les aventuriers affluent dans la nouvelle Sufokia. Pas non seulement pour s'instruire sur l'histoire de celle-ci, car la bibliothèque de la ville ne présente aucune informations sur les origines de la villes ou autres informations la concernant, ce qui n'est pas très censé.
+          </p>
+          <p>
+			  En réalité, ce qui attire les aventuriers est sans doute sa banque, sa taverne mais aussi le luxueux bateau vers l'Île d'Otomaï qui est une des destinations les plus visités. Mais pour en revenir à la ville de Sufokia, une épicerie s'y dresse en son centre et cet endroit ou l'eau n'est pas en manque est le lieu rêvé des pêcheurs. 
+          </p>
+          <p>
+			  De nombreux quais sont présents aux quatres coins de la ville permettant de se déplacer rapidement à travers celle-ci. Néanmoins, le point essentiel de cette vielle est sans aucun doute le temple Steamers. Un magnifique temple de pierre ou est disposé une imposante statue d'Oktapodas. A l'intérieur de celui-ci, la culture Steamers n'est pas caché, car Jelus Verne se fera un plaisir de vous renseigner sur les coutûmes Steamers.
+          </p>
+
+          <h3>La faune et la flore</h3>
+
+          <p>
+			  Peut-on réelement parler d'une flore a Sufokia ? Des plantes communes sans doute mais rien de spécial de ce côté. Par contre, en terme de faune, l'on peut remarquer une ex-croissance des Pious qui ont envahi la ville et qui se dresseront sur votre passage.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="cawotte" class="overlay">
+      <div class="popup">
+        <h2>L'Île des Wabbits</h2>
+        <a class="close" href="#carte">&times;</a>
+        <div class="content">
+          <p><img class="gauche" src="../image/carte/wabbit.png" alt="wabbit" />Si, comme la majorité des aventuriers, la chasse aux Wabbits vous a toujours fait rêver, c'est le moment de franchir le pas et de prendre le bateau depuis le port d'Amakna pour un petit voyage jusqu'à l'île des Wabbits !
+          </p>
+          <p>
+			  Vous y découvrirez un peuple aujourd'hui opprimé, qui aura besoin de votre aide pour retrouver un peu de tranquillité. Très vite, vous vous apercevrez que l'île est infestée de terribles "Wabbits" prêts à tout pour vous mener la vie dure.
+          </p>
+          <p>
+			  Il vous faudra beaucoup de courage pour traverser cette île et accéder au célèbre château du Wa Wabbit, réputé pour sa mauvaise humeur, et son dégoût pour tout ce qui ne ressemble pas de près ou de loin à une femelle Wabbit ou une Cawotte.
+          </p>
+          <p>
+			  Mais gardez espoir, même si vous allez devoir traverser son château très bien gardé par les terribles Wobots, vous devriez pouvoir rencontrer le Wa Wabbit en personne et peut-être récupérer certains des puissants artefacts qu'il a en sa possession.
+          </p>
+          <p>
+			  Si vous ne vous sentez pas prêts à affronter cet adversaire de taille, vous pourrez tout de même parcourir l'île, recenser les différentes espèces de Wabbits qui y vivent et ainsi débuter une collection de dents et d'oreilles !
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="foret" class="overlay">
+      <div class="popup">
+        <h2>Forêt des Abraknydes</h2>
+        <a class="close" href="#carte">&times;</a>
+        <div class="content">
+          <p><img class="gauche" src="../image/carte/abra.png" alt="abra" />D'ordinaire, lorsqu'un aventurier pénètre dans une forêt, il a peur de rencontrer les créatures redoutables qu'elle abrite... Or, lorsqu'un aventurier entre dans la forêt d'Abraknyde, il a peur du Mulou, mais aussi de ses arbres ! Cette forêt luxuriante est en effet remplie d'Abraknydes réputés pour être particulièrement agressifs, surtout lorsqu'un humanoïde se met en travers de leur chemin !
+          </p>
+          <p>
+			  Vous pourrez éventuellement y rencontrer quelques insectes de grosse taille comme des Araknes ou des Moskitos, mais ils vous paraîtront sûrement bien inoffensifs face à ces arbres vivants !
+          </p>
+          <p>
+			  Bien avant l'arrivée des êtres évolués et de leurs bourgs, Amakna était une région à la végétation opulente. Les humains, provenant pour la plupart des mers et des montagnes, découvrirent des forêts animées et hostiles. Il fallut la disparition de nombreux aventuriers pour qu'on comprenne que cette forêt renfermait un terrible secret : des arbres vivants que l'on nomma « Abraknydes ». Ces arbres hors du commun s'attaquaient systématiquement à quiconque s'approchait d'eux. Tirant leur pouvoir du coeur de la forêt, les Abraknydes étaient capables d'invoquer des Araknes et de se régénérer en plein combat. Néanmoins, à l'aide du feu, les êtres humains parvinrent à mettre fin à leur révolte.
+          </p>
+          <p>
+			  Dès lors, à chaque nouvelle construction, les envahisseurs allumaient des torches pour incendier les parcelles de terrains dont ils avaient besoin. Progressivement, les Abraknydes disparurent.
+          </p>
+          <p>
+			  Cependant, au nord-ouest d'Amakna, une partie de la forêt est restée intacte. Aucun foyer ni aucun coup de hache n'ont su en venir à bout. Des légendes racontent que, conservant une haine tenace contre les nouvelles populations d'Amakna, les Abraknydes préparent leur vengeance.
+          </p>
+          <p>
+			  Certains disent aussi qu'au sein de cette forêt repose le Chêne Mou, le gardien ancestral et vénéré de tous les végétaux. D'après la rumeur, le Chêne Mou, qui est le coeur et la conscience de la forêt, serait à l'origine de l'arrivée des Abraknydes et des autres maléfices en Amakna. Bon nombre d'aventuriers, bien souvent plus attirés par les trésors que par le savoir, tentèrent d'en savoir plus sur cet arbre légendaire. Mais très peu en revinrent...
+          </p>
+          <p>
+			  Les nombreuses versions des rares rescapés n'avaient que très peu de crédibilité auprès des autorités. Pourtant, lorsque d'importants groupes d'hommes disparaissaient, les anciens ne pouvaient que constater une augmentation du nombre d'Abraknydes.
+          </p>
+          <p>
+			  Mais les hommes ayant depuis longtemps renoncé à réduire en cendres cette sombre forêt, le mystère reste entier...
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="amakna" class="overlay">
+      <div class="popup">
+        <h2>Amakna</h2>
+        <a class="close" href="#carte">&times;</a>
+        <div class="content">
+          <p><img class="gauche" src="../image/carte/amakna.jpg" alt="amakna" />Amakna est un village si connu que certains aventuriers donnent son nom à la province, voire au monde lui-même. C'est une erreur bien excusable lorsqu'on sait que le destin du monde entier s'est joué à Amakna !
+          </p>
+          <p>
+			  Amanka est un village paisible en comparaison à Astrub la populeuse. La place marchande est néanmoins très courue, et de nombreux fidèles se rendent aux temples édifiés dans les environs. 
+          </p>
+          <p>
+			  L'absence d'Hôtels de Vente montre qu'Allister, le Roi d'Amakna, a toujours favorisé l'artisanat. De très nombreux marchands proposent leur production au coeur du village. De fait, la production d'équipement est de meilleure qualité qu'à Astrub. 
+          </p>
+          <p>
+			  En souvenir de ses exploits passés, et soucieux d'éduquer les jeunes aventuriers à l'art guerrier, le roi Allister a fait construire le Kanojedo : dans ce lieu tu pourras tester tes capacités au combat et éprouver tes techniques favorites sur une cible inerte. 
+          </p>
+          <p>
+			  Vers l'est de trouve le port de Madrestam où tu pourras chanter, danser, manger, boire et reboire, même si la tendance actuelle est plus de prendre le temps de pêcher sur le quai ou de prendre le bateau pour voyager jusqu'à la célèbre île des Wabbits ! 
+          </p>
+
+          <h3>Le Château d'Amakna:</h3>
+
+          <p>
+			  Allister y vit reclus auprès de sa cour. Le vieux roi se défie du monde extérieur, et on dit que sa confrontation avec Uk'Not'Allag, le démon lige du Seigneur Rushu, ne l'aurait pas laissé indemne. On dit aussi qu'il garde un lourd secret qu'il préfère cacher au plus profond de lui... 
+			  C'est pour se distraire de son humeur noire que le Roi a fait construire les Haras Royaux qui accueillent en Amakna les éleveurs de montures, pour le plus grand plaisir des aventuriers. 
+          </p>
+
+          <h3>Le camp des Bworks:</h3>
+
+          <p>
+			  Au Nord du Labyrinthe, accessible par la Montagne des Craqueleurs, se trouve un petit village d'irréductibles Bworks qui résistent encore et toujours à l'envahisseur. Ses cahutes faites de paille et de bois vous donneront l'impression d'être retourné à un âge primitif. Ses habitants ne feront que renforcer ce sentiment...
+          </p>
+          <p>
+			  Comme l'a constaté l'érudit Acidrik Fenlapanse « Là-bas, toute créature douée d'intelligence ne survit pas longtemps ». Ceci en dit long sur le quotient cérébral du Bwork moyen.
+			  La magie Bwork, l'art Bwork et notamment l'art guerrier sont frustes, mais d'une puissance inégalée. Ses habitants font bien souvent peur aux aventuriers de passage, et pour cause ! Leur visage disgracieux lié aux crispations provoquées par la retenue de gaz intestinaux a de quoi faire dresser les cheveux des Iops ! Il paraîtrait même que leurs problèmes digestifs seraient la cause de leur déficience intellectuelle.
+          </p>
+          <p>
+			  Néanmoins, les Bworks ont su tirer parti de cette faiblesse. Elle leur a en effet permis de mettre au point une boisson alcoolisée et énergétique qu'ils ont l'habitude de nommer « la pisse de Bwork ». Malheureusement (ou heureusement) personne n'a jamais pu découvrir le secret de sa fabrication... Les Pandawas quant à eux ont coutume d'appeler ça de la bière. Peu importe son nom, ses effets sont là !
+          </p>
+          <p>
+			  Toutefois, le Campement des Bworks n'est pas l'endroit le plus hospitalier d'Amakna. Ses occupants de nature agressive vous le feront vite comprendre. Réfléchissez donc à deux fois avant de vous aventurer dans ce village !
+          </p>
+
+          <h3>Les Marécages:</h3>
+
+          <p>
+			  Les Marécages sont infestés de Crocodailles, de Boos et d'Araknes. C'est peut-être un détail pour toi, mais pour un aventurier expérimenté, ça veut dire beaucoup !
+          </p>
+          <p>
+			  Au fin fond des Marécages luit une lueur verdâtre. Figée dans la pierre, Crocobur, l'épée de Crocoburio, attend le valeureux guerrier qui saura la déloger de sa prison de pierrre.
+          </p>
+
+          <h3>Le cimetière d'Amakna:</h3>
+
+          <p>
+			  Situé sur une petite île au sud du village d'Amakna, le cimetière ouvre ses portes rouillées aux aventuriers intrépides, téméraires, timbrés ou les trois. Après avoir emprunté un ponton branlant, tu te retrouveras au beau (c'est vite dit) milieu d'une faune on ne peut moins accueillante. En effet, les habitants du cimetière détestent être dérangés, c'est pourquoi ils ont pris soin de s'entourer de Kwoans, Tofus Maléfiques et de Chafers qui sauront te faire passer l'envie d'y revenir. 
+          </p>
+          <p>
+			  Enfin, tu croiseras peut-être llà-bas de grands gars bien bâtis, avec une dégaine à faire pâlir un preux. Foulard noir sur la tête, cape sombre sur les épaules, on les appelle les Roublards. Si tel est le cas, ils brûleront certainement d'envie de te faire signer un bail éternel dans l'une des magnifiques cryptes avec vue sur la mer d'Asse.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="moon" class="overlay">
+      <div class="popup">
+        <h2>L'Île de Moon</h2>
+        <a class="close" href="#carte">&times;</a>
+        <div class="content">
+          <p><img class="gauche" src="../image/carte/moon.jpg" alt="moon" />C'est l'endroit rêvé pour passer des vacances au soleil sans temps morts.
+			  Le seul moyen de s'y rendre est de prendre contact avec l'Agence Touriste qui gère le voyage pour une somme modique.
+          </p>
+          <p>
+			  Attention tout de même, mieux vaut aimer les sensations fortes, le voyage n'étant pas de tout repos et la visite guidée n'est pas fournie à l'arrivée...
+			  Une fois arrivé là-bas, vous constaterez avec plaisir, que le sable est blanc, fin et chaud, que le soleil tape très fort.
+			  Heureusement, l'ombre des kokotiers, l'écume de la mer et les senteurs exotiques sauront vous rafraîchir en cas de petite faiblesse.
+          </p>
+          <p>
+			  Les aventuriers déconseillent tout de même de prendre des vacances sur l'île de "Moon" sans s'être au préalable correctement préparé.
+          </p>
+          <p>
+			  En effet, si le bord de mer est paisible, plus vous vous enfoncerez dans la jungle, plus vous risquerez de ne jamais revenir en un seul morceau.
+			  Ne vous fiez pas trop au climat paradisiaque, d'horribles et fourbes créatures habitent cette île, même les plantes et les Kokotiers se révèlent parfois être de redoutables ennemis.
+			  Les seuls alliés que vous pourrez trouver sont les éventuels rescapés d'un naufrage ou les autres aventuriers qui n'ont pas encore été dévorés par les terribles "Kannibouls".
+          </p>
+          <p>
+			  Cette île est pourtant très convoitée, dirigée par le légendaire "Moon", elle se révèle aussi bien truffée de pièges que de bonnes surprises, même si l'on tombe surtout sur les pièges.
+			  Dans tous les cas, tâchez de profiter au maximum de votre voyage, n'oubliez pas de faire connaissance avec la faune locale, comme le célèbre Pirate "Le Chouque", la tribu des Kaniboules, ou les petites tortues colorées.
+          </p>
+          <p>
+			  Quant à "Moon" lui-même, on raconte qu'il n'aime pas réellement que l'on vienne visiter son île et n'hésitera pas à envoyer ses sbires à travers la jungle pour vous courser.
+			  Les rares aventuriers qui sont arrivés jusqu'à lui, rapportent qu'il possède un marteau d'une puissance phénoménale, le Marteau de "Moon".
+			  Aussi étrange que cela puisse paraître, il ne s'agit pas réellement d'un marteau. Le mystère reste entier.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="grobe" class="overlay">
+      <div class="popup">
+        <h2>L'Île de Grobe</h2>
+        <a class="close" href="#carte">&times;</a>
+        <div class="content">
+          <p><img class="gauche" src="../image/carte/grobe.jpg" alt="grobe" />Située à l'extrémité nord-est de Pandala, la presqu'île de Grobe a été désertée par les Pandawas eux-mêmes qui la considèrent comme le territoire de leurs ancêtres. Nombreux sont ceux qui croient que les esprits des aventuriers morts au combat hantent ces terres. Imaginez ne serait qu'un instant une horde de Pandawas ivres-morts... Au sens propre du terme pour cette fois !
+          </p>
+          <p>
+			  Majoritairement peuplée de fantômes Pandawas, la Presqu'île de Grobe abrite également quelques fantômes Lenalds.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="dopeul" class="overlay">
+      <div class="popup">
+        <h2>Le village des Dopeuls</h2>
+        <a class="close" href="#carte">&times;</a>
+        <div class="content">
+          <p><img class="gauche" src="../image/carte/dopeuls.png" alt="dopeuls" />Les Dopeuls sont de viles créatures chassées par les dieux qui se sont réfugiées aux confins ouest du monde... Il semblerait que certaines pierres en leur possession soient indispensables pour la confection d'arme et d'équipement de grande valeur.
+  Certains d'entre eux ont été enlevés par leur maître de classe respective afin de servir d'entrainement au sein des temples de classe.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="pandala" class="overlay">
+      <div class="popup">
+        <h2>L'Île de Pandala</h2>
+        <a class="close" href="#carte">&times;</a>
+        <div class="content">
+          <p><img class="gauche" src="../image/carte/pandala.jpg" alt="pandala" />L'île de Pandala et ses autochtones restent relativement peu connus du reste du Monde des Douze. Lorsque l'île de Pandala s'est ouverte aux aventuriers, les miasmes et les nouvelles maladies en profitèrent pour se répandre sur Amakna. Selon certaines sources, c'est la Déesse Pandawa elle-même qui aurait provoqué cette épidémie afin de faire découvrir son territoire au reste du Monde.
+          </p>
+          <p>
+			  Toutefois, l'île n'est pas sans charme et les multiples ressources qui s'y trouvent ont de grandes chances d'éveiller votre attention. Les aventuriers s'y rendent attirés par la légende savamment entretenue des 6 Dofus qui y seraient dissimulés...
+          </p>
+          <p>
+			  Ce qui est certain, c'est que l'alcool y est bon, la nourriture exquise et les Pandawettes sexy. La réputation de ses boissons fermentées à base de bambou n'est plus à faire... Vous y trouverez également des ressources exceptionnelles présentes nulle part ailleurs.
+          </p>
+          <p>
+			  L'île de Pandala peut être divisée en 6 grandes contrées. Au centre, vous y trouverez un village peuplé de bulbes et d'autochtones constamment ivres. Celui-ci est dirigé par Grandapan, le chef du conseil de Pandala. C'est lui même qui décida d'ouvrir l'île aux touristes, ce qui ne fut pas du goût de tout le monde... En effet, les Pandikazes décidèrent de ne pas suivre les règles prescrites par leur vénérable maître et se livrèrent à une consommation abusive de boisson fermentée, faisant naître au plus profond d'eux même un sentiment de surpuissance. D'ailleurs, si vous les croisez sur votre chemin, ils n'hésiteront pas à faire usage de leur force.
+          </p>
+          <p>
+			  Dès leur plus jeune âge, les Pandawas sont initiés au Pandawushu, un art martial très sophistiqué qui nécessite certaines conditions pour être pratiqué, notamment celle de savoir faire preuve de grâce et de légèreté tout en combattant dans un état d'ébriété avancé. Ce qui, de toute évidence, n'est pas donné à tout le monde...
+          </p>
+          <p>
+			  À l'extrémité nord-est de l'île se trouve la tant redoutée Presqu'île de Grobe... Hantée par les fantômes des victimes passées, cette île est majoritairement peuplée de Pandawas et de Lenald. Il vous faudra bien du courage pour oser vous y aventurer !
+          </p>
+          <p>
+			  4 autres territoires sont concentrés à la périphérie de l'île : Aerdala, Akwadala, Terrdala et Feudala, tous convoités par les guerriers de Bonta et de Brakmar qui se livrent une bataille sans merci depuis l'ouverture du continent.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+  &copy;Dofus est un MMORPG édité par Ankama.Ceci est un site non-officiel sans aucun lien avec Ankama.
+  Toutes les illustrations et l'univers sont la propriété d'Ankama Studio et de Dofus.
+      </p>
+    </footer>
+    <a id="retour" class="retour" href="#haut"></a>
+
+  </body>
+
+</html> 

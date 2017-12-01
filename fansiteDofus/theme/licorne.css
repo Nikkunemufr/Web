@@ -1,0 +1,181 @@
+/**Style Général**/
+
+nav{
+	background: #fd7272;
+}
+#boutton{
+	background: url("image/licorne/menu_licorne.png") center center no-repeat;
+}
+#boutton:hover{
+	background: url("image/licorne/menu_licorne_hover.png") center center no-repeat;
+}
+
+nav a:hover{
+	color:#73018b;
+}
+nav li li a{
+	border-top:1px solid white;
+}
+#retour{
+	background-image:url("image/licorne/retour_licorne.png");
+}
+#retour:hover{
+	background-image:url("image/licorne/retour_licorne_hover.png");
+}
+
+#page, body {
+	background-color: #fd7272;
+}
+
+h2{
+	color: white;
+}
+
+p{
+	color: #73018b;
+}
+a{
+	color: #9f08bf;
+}
+/**page RP.html**/
+.calque-bg {
+	background-image: url("image/licorne/bg.jpg");
+}
+
+.calque-1 {
+	background-image: url("image/licorne/3.png");
+}
+
+.calque-2 {
+	background-image: url("image/licorne/2.png");
+}
+
+.calque-3 {
+	background-image: url("image/licorne/hero.png");
+}
+.calque-4 {
+	background-image: url("image/licorne/5.png");
+	background-position:top;
+}
+.calque-5 {
+	background-image: url("image/licorne/1.png");
+}
+
+#sommaire{
+	background: radial-gradient(ellipse at center, #73018b 0%,#fd7272 100%,#fd7272 100%);
+	box-shadow: 0 0 5px white;
+	width:600px;
+	padding: 1%;
+	margin:1%;
+}
+section{
+	padding:1%;
+	margin: 1%;
+	border-top: thin solid #73018b;
+}
+/**page contact.html**/
+#fondcontact{
+	position:fixed;
+	top:0;
+	right:0;
+	background: radial-gradient(ellipse at center, #73018b 0%,#fd7272 100%,#73018b 100%);
+	width:100%;
+	height:100%;
+	z-index:-100;
+}
+
+fieldset {
+	background:white;
+}
+form h2{
+	color: #73018b;
+}
+form h3{
+	color:grey;
+}
+
+input,textarea {
+	border: 1px solid #ccc;
+	color: grey;
+}
+
+.boutton {
+	background-color: #73018b;
+	color: black;
+}
+
+#barre_de_progession li {
+	color: white;
+}
+#barre_de_progession li:before {
+	background: white;
+	color: black;
+}
+
+#barre_de_progession li:after {
+	background: white;
+}
+
+#barre_de_progession li.active:before,  #barre_de_progession li.active:after{
+	background: #73018b;
+	color: black;
+}
+
+#infocontact {
+	text-align:center;
+	font-size:10px;
+	margin-bottom:2%;
+}
+#social a {
+	border: 2px solid transparent;
+	padding: 15px;
+}
+#social a:hover {
+	border-radius: 45%;
+}
+#social a:not(:first-child) {
+	margin-left: 1.5%;
+}
+#social a:nth-child(1) {
+	background:url("../image/social/facebook.png") no-repeat center;
+	border-bottom-color: #3b5998;
+}
+#social a:nth-child(2) {
+	background:url("../image/social/twitter.png") no-repeat center;
+	border-bottom-color: #00a0d1;
+}
+#social a:nth-child(3) {
+	background:url("../image/social/google+.png") no-repeat center;
+	border-bottom-color: #db4a39;
+}
+#social a:nth-child(4) {
+	background:url("../image/social/pinterest.png") no-repeat center;
+	border-bottom-color: #c8232c;
+}
+#social a:nth-child(5) {
+	background:url("../image/social/youtube.png") no-repeat center;
+	border-bottom-color: #c12025;
+}
+/**Page carte interactive**/
+.content p{
+	color: #c124e3;
+}
+.popup h2{
+	color: #73018b;
+	text-align:center;
+	border: 1px solid #73018b;
+}
+.content li{
+	color:grey;
+}
+.popup .close {
+	color: #73018b;
+}
+
+.popup .close:hover {
+	color: #c124e3;
+}
+
+.popup {
+	background: white;
+}

@@ -1,0 +1,125 @@
+@font-face {  
+font-family: "abeezee";
+src: url("../polices/abeezee/ABeeZee-Regular.otf"); 
+
+}
+
+body{
+	margin-right:10%;
+	margin-left:10%;
+	font-family:abeezee;
+	color:black;
+	background-color: #83E2CF;
+}
+h1{
+	padding-top:4%;
+
+}
+h2,h3{
+	color:#1072BC;
+}
+header {
+	margin-left:auto;
+	margin-right:auto;
+	background-image:url("../fonds/fonds.jpg");
+	color:white;
+	text-align:center;
+	height:100px;
+	width:100%;
+	background-position: 0 100px;
+}
+
+header:hover{ 
+	color:red;
+	background-position: 0 300px;
+}
+nav{
+	margin:auto;
+	width:80%;
+}
+nav a{
+	color:white;
+	text-decoration:none;
+	
+}
+nav li{
+
+	list-style-type:none;
+	display: inline-block;
+	background-color: #00529E;
+	padding: 1%;
+	border: 2px white solid;
+	border-radius: 2px;
+}
+
+nav li:hover{
+	background-image: url("../fonds/bulle.jpg");
+	background-size: cover;
+}
+
+#main{
+	display:flex;
+}
+
+div section, aside{
+
+	background-color: white;
+	border: 1px black solid;
+	margin-bottom:2%;
+	margin-left:2%;
+}
+
+div section{
+	padding:1%;
+}
+
+
+aside img {
+	display: inline-block;
+	width:100%;
+
+
+}
+
+section img{
+
+	float:right;
+	padding:1%;
+}
+aside{
+
+	text-align:center;
+	width:45%;
+	height:10%;
+}
+
+#video{
+	text-align:center;
+}
+
+section li{
+	list-style-image: url("../images/icone.jpg");
+}
+
+a div{	
+	margin:auto;
+	background-image:url("../images/poisson.png");
+	width:45px;
+	height:23px;
+}
+
+figcaption{
+opacity:0;
+}
+
+figure:hover figcaption{
+opacity:1;
+color:white;
+background-color:#00529E;
+}
+
+hr {
+	height: none;
+	border: none;
+	border-top: 1px dashed black;
+}

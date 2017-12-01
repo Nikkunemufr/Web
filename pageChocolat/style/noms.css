@@ -1,0 +1,60 @@
+
+
+.clearer { 
+  	height: 0;
+  	font-size: 0;
+  	clear: both;
+ }
+
+p {margin-left : 15px;
+   margin-right: 15px;}
+   
+figure img { 
+	width:30%;
+	padding: 2%;}
+
+#suchard img {float:left;}
+#nestle img{float:right;}
+#houten img {float:left; width:250px;}
+
+
+
+#houten p {padding-top : 40px;}
+
+
+/* le bloc avec bordure à bords ronds */
+#prod { width:75%;
+	margin:auto;
+	border-style:solid;
+	border-width:3px;
+	padding:10px;
+	border-color:maroon;
+	border-radius:20px;
+	margin-bottom: 50px;
+	padding-left:15px;}
+	
+	
+
+/* partie contacts*/
+	
+#contact li{	
+      display: inline-block;
+       }
+
+#contact div {
+  width: 34px;
+  height: 34px;
+}
+
+#contact {list-style-type:none;}
+#facebook div{
+  background-image: url(../images/facebook_34x34.png);
+}
+#google div {
+  background-image: url(../images/google_34x34.png);
+}
+#twitter div {
+  background-image: url(../images/twitter_34x34.png);
+}
+
+ 

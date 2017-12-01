@@ -1,0 +1,60 @@
+/**PopUp**/
+.popup h2{
+	font-size: 25px;
+}
+
+.overlay {
+	overflow: auto;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);		/**on met les propriétés que va possèder la popup, un fond translucide, une position fixé par rapport au reste de la page, une barre de scroll unique à la popup, puis on la cache et on indique qu'on ne peut pas cliquer dessus en la mettant derriere le reste du contenu**/
+	z-index: -10;
+	transition: opacity 500ms;
+	opacity: 0;	
+}
+
+.overlay:target {
+	z-index:9999;
+	opacity:1;			/**on fait apparaitre la popup et on indique qu'on peut rentrer en intéraction avec elle**/
+}
+
+.popup {
+	margin: 70px auto;
+	padding: 2%;
+	background: white;
+	border-radius: 5px;			/**Style graphique de la popup: fonds, bordure, espacement avec les bords, effet avancés**/
+	width: 60%;
+	position: relative;
+	transition: all 5s ease-in-out;
+}
+
+.popup .close {
+	font-weight: bold;
+	font-size: 40px;
+	position: relative;			/**on place et on applique du style à la croix qui va nous permette de fermer la popup**/
+	top: -50px;
+	right: -95%;
+	transition: all 500ms;
+}
+
+
+.popup .content {
+	max-height: 30%;
+	margin-top: -5%;
+}
+
+.content li{
+	display: inline-block;		/**Utile pour les monstres et heros present dans nos popup nous permettant de les aligners et d'appliquer du style à la légende, ces images vont nous permette d'ouvrir une popup à l'intérieur de la popup**/
+	text-align:center;
+}
+
+
+
+.popup img{
+	max-width: 100%;		/** Pour éviter que l'image sorte de la pop up et qu'elle se deforme**/
+	height: auto;
+
+}

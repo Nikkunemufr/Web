@@ -1,0 +1,21 @@
+body{
+	margin-right: 3em;
+	margin-left: 3em;
+	width: 25em;
+}
+
+h1{
+	text-align: center;
+}
+
+textarea {
+	font-family:monospace;
+}
+
+section{
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-bottom: 2em;
+	padding-top: 1em;
+	background-color: #C8C8FF;
+}

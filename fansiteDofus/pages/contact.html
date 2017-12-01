@@ -1,0 +1,204 @@
+﻿ <!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/x-icon" href="../image/favicon.ico" />
+	<link rel="stylesheet" href="../theme/turquoise.css" id="theme">
+    <link rel="stylesheet" href="../style/commun.css">
+    <link rel="stylesheet" href="../style/menu.css">
+    <link rel="stylesheet" href="../style/contact.css">
+    <title>Dofus fansite - Contact</title>
+    <!--Script du formulaire-->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="../javascript/retour_haut_de_page.js"></script>
+    <script type="text/javascript" src="../javascript/menu.js"></script>
+	<script type="text/javascript" src="../javascript/changement_theme.js"></script>
+  </head>
+
+<body id="haut">
+  <!--Fond du site-->
+  <div id="fondcontact"></div>
+  <!-- menu de navigation-->
+  <nav>
+    <a href="javascript:;" class="menuclose"></a>
+    <ul>
+      <li><a href="../accueil.html">Accueil</a></li>   		
+      <li><a class="deroulant">L'Histoire</a>
+        <ul class="submenu">
+          <li><a href="../pages/rp.html">Les Tomes</a></li>
+          <li><a href="../pages/carte.html">Carte intéractive</a></li>
+        </ul>
+      </li>     
+      <li><a class="deroulant">L'Univers</a>
+        <ul class="submenu">
+          <li><a href="../pages/jeu.html">Le Jeu</a></li>
+          <li><a href="../pages/tutoriel.html">Tutoriels</a></li>
+        </ul>
+      </li> 	
+      <li><a href="../pages/classes.html">Les Classes</a></li>	
+      <li><a href="../pages/media.html">Media</a></li>   
+      <li><a href="#">Contact</a></li>
+    </ul>
+	<button onclick="theme('../theme/pourpre.css')">Pourpre</button>
+	<button onclick="theme('../theme/turquoise.css')">Turquoise</button>
+	<button onclick="theme('../theme/ocre.css')">Ocre</button>
+	<button onclick="theme('../theme/ebene.css')">Ebene</button>
+	<button onclick="theme('../theme/ivoire.css')">Ivoire</button>
+	<button onclick="theme('../theme/emeraude.css')">Emeraude</button>
+	<button onclick="theme('../theme/licorne.css')">Licorne</button>
+  </nav>
+  <div id="flou"></div>
+    <a href="javascript:;" id="boutton"></a>
+    <!--Serveur Php de Monsieur Jurie permettant de recevoir les données du formulaire-->
+    <form id="formulaire" method="post" name="formulaire" action="https://jurie.users.greyc.fr/teaching/proc-form.php">
+
+    <!-- barre de progession -->
+    <ul id="barre_de_progession">
+      <li class="active">Qui êtes vous ?</li>
+      <li>Quelques informations</li>
+      <li>Votre ressentie du jeu</li>
+      <li>Boite à idée</li>
+    </ul>
+    <!--Partie 1 du formulaire-->
+    <fieldset>
+      <h2>Quelques renseignements sur vous</h2>
+      <h3>Nous ne divulguerons pas ses informations</h3>
+
+      <input type="text" name="pseudo" placeholder="Entrer votre pseudo" id="pseudo" maxlength="20" size="20"/>
+      <input type="password" name="pass" placeholder="Votre mot de passe" id="pass" size="20"/>
+      <input type="password" name="cpass" placeholder="Confirmer votre mot de passe" />
+      <input type="email" name="email" placeholder="Entrer votre email" id="email" size="30"/>
+      <input type="url" name="site" placeholder="Votre site ou blog perso" id="site" size="30"/>
+      <input type="tel" name="tel" placeholder="Votre numéro de téléphone" id="tel" maxlength="10" />
+      <label for="pays">De quel pays êtes vous d'origine ?</label>
+      <select name="pays" id="pays">
+        <option value="france">France</option>
+        <option value="espagne">Espagne</option>
+        <option value="italie">Italie</option>
+        <option value="royaume-uni">Royaume-Uni</option>
+        <option value="canada">Canada</option>
+        <option value="etats-unis">Etats-Unis</option>
+        <option value="chine">Chine</option>
+        <option value="japon">Japon</option>
+        <option value="maroc">Maroc</option>
+      </select>
+      <br />
+      <input type="button" name="suivant" class="next boutton" value="Suivant" />
+    </fieldset>
+    <!--Partie 2 du formulaire-->
+    <fieldset>
+      <h2>Quelques informations</h2>
+      <h3>Pour savoir quoi voila</h3>
+		
+      <input type="number" placeholder="Le niveau de votre personnage principal" min="1" max="200" name="number" id="number" size="30"/>
+      <label for="range">Votre connaissance du jeux ( allant de 1 à 10 ) :</label>
+      <input type="range" name="range" id="range" min="0" max="10"/>
+      <input type="date" placeholder="La date de vos premiers pas sur le jeu" name="date" id="date" />
+      <label for="color">Votre couleur préferer :</label>
+      <input type="color" name="color" id="color" />
+		Cochez les classes que vous avez déjà joué :<br />
+      <label for="feca">Féca</label><input type="checkbox" name="feca" id="feca" />
+      <label for="osa">Osamodas</label><input type="checkbox" name="osa" id="osa" /> 
+      <label for="enu">Enutrof</label><input type="checkbox" name="enu" id="enu" /> 
+      <label for="sram">Sram</label><input type="checkbox" name="sram" id="sram" /> 
+      <label for="xel">Xélor</label><input type="checkbox" name="xel" id="xel" /> 
+      <label for="eca">Ecaflip</label><input type="checkbox" name="eca" id="eca" /> 
+      <label for="eni">Eniripsa</label><input type="checkbox" name="eni" id="eni" /> 
+      <label for="iop">Iop</label><input type="checkbox" name="iop" id="iop" /> 
+      <label for="cra">Cra</label><input type="checkbox" name="cra" id="cra" /> 
+      <label for="sadi">Sadida</label><input type="checkbox" name="sadi" id="sadi" /> 
+      <label for="sacri">Sacrieur</label><input type="checkbox" name="sacri" id="sacri" /> 
+      <label for="panda">Pandawa</label><input type="checkbox" name="panda" id="panda" /> 
+      <label for="roub">Roublard</label><input type="checkbox" name="roub" id="roub" /> 
+      <label for="zozo">Zobal</label><input type="checkbox" name="zozo" id="zozo" /> 
+      <label for="steam">Steamer</label><input type="checkbox" name="steam" id="steam" /> 
+      <label for="elio">Eliotrope</label><input type="checkbox" name="elio" id="elio" /> 
+      <label for="hupper">Huppermage</label><input type="checkbox" name="hupper" id="hupper" /> 
+	   
+      <input type="button" name="precedent" class="previous boutton" value="Precedent" />
+      <input type="button" name="suivant" class="next boutton" value="Suivant" />
+    </fieldset>
+    <!--Partie 3 du formulaire-->
+    <fieldset>
+      <h2>Votre ressentie du jeu</h2>
+      <h3>Si t'aime pas on va pas etre copain</h3>
+		
+      <label for="++">Très bon jeu</label>
+      <input type="radio" name="bac" value="++" id="++" /> 
+      <label for="+">Bon jeu</label>
+      <input type="radio" name="bac" value="+" id="+" /> 
+      <label for="=">Jeu moyen</label>
+      <input type="radio" name="bac" value="=" id="=" /> 
+      <label for="-">Jeu passable</label>
+      <input type="radio" name="bac" value="-" id="-" /> 
+      <label for="--">Jeu médiocre</label>
+      <input type="radio" name="bac" value="--" id="--" /> 
+
+      <label for="serveur">Votre serveur de jeu :</label>
+      <select name="serveur" id="serveur">
+        <optgroup label="Classique">
+          <option value="menalt">Menalt</option>
+          <option value="kuri">Kuri</option>
+          <option value="helse">Helsephine</option>
+          <option value="hecate">Hecate</option>
+        </optgroup>
+        <optgroup label="Héroique">
+          <option value="ombre">Ombre</option>
+          <option value="djaul">Djaul</option>
+          <option value="agride">Agride</option>
+          <option value="oto-mustan">Oto Mustan</option>
+        </optgroup>
+        <optgroup label="Epique">
+          <option value="raval">Raval</option>
+          <option value="jiva">Jiva</option>
+          <option value="farle">Farle</option>
+          <option value="hyrkul">Hyrkul</option>
+        </optgroup>
+		   </select><br />
+	<input type="button" name="precedent" class="previous boutton" value="Precedent" />
+    <input type="button" name="suivant" class="next boutton" value="Suivant" />
+</fieldset>
+<!--Partie 4 du formulaire-->
+<fieldset>
+		<h2>Le mot de la fin</h2>
+		<h3>En vous remerciant de nous avoir écris</h3>
+		
+			<textarea rows="15" name="avis" placeholder="Votre avis sur le site internet"></textarea>
+			<textarea rows="10" name="suggestions" placeholder="Des suggestions ?"></textarea><br />
+			
+	<input type="button" name="precedent" class="previous boutton" value="Precedent" />
+	<input type="submit" name="envoyer" class="submit boutton" value="Envoyer" />
+</fieldset>
+</form>
+
+
+<script type="text/javascript" src="../javascript/contact.js"></script>
+<div id="infocontact">
+	<p>ANKAMA</p>
+	<p>75, boulevard d'Armentières</p>
+	<p>59 100 Roubaix</p>
+	<p>France</p>
+	<p>03.20.36.30.00</p>
+	<br>
+	<div id="social">
+		<a href="http://www.facebook.com"></a>
+		<a href="http://www.twitter.com"></a>
+		<a href="http://plus.google.com"></a>
+		<a href="http://www.pinterest.com"></a>
+		<a href="http://www.youtube.com"></a>
+	</div>
+</div>
+
+<footer>
+	<p>
+&copy;Dofus est un MMORPG édité par Ankama.Ceci est un site non-officiel sans aucun lien avec Ankama.
+Toutes les illustrations et l'univers sont la propriété d'Ankama Studio et de Dofus.
+	</p>
+</footer>
+<a id="retour" class="retour" href="#haut"></a>
+
+</body>
+
+</html> 
+
+

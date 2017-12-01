@@ -1,0 +1,9 @@
+body{
+	background-image: url('../imgs/tapis.jpg');
+}
+section{
+	text-align: center;
+}	
+button{
+	margin:0 auto;
+}
