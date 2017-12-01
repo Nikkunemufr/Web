@@ -1,3 +1,7 @@
+//###############################
+//#	Created by Alexis MORTELIER	#
+//#		All Right Reserved		#
+//###############################
 $(document).ready(function() {
 		$('.retour').on('click', function() { // Au clic sur un élément
 			var page = $(this).attr('href'); // Page cible

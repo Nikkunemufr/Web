@@ -1,3 +1,8 @@
+//###############################
+//#	Created by Alexis MORTELIER	#
+//#		All Right Reserved		#
+//###############################
+
 var nbMystere=-1;
 var nbEssai=0;
 var nbMax=11;

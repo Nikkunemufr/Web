@@ -1,4 +1,7 @@
-
+//###############################
+//#	Created by Alexis MORTELIER	#
+//#		All Right Reserved		#
+//###############################
 var ctx;
 window.onload=pageChargee;
 var romain;

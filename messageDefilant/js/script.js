@@ -1,3 +1,8 @@
+//###############################
+//#	Created by Alexis MORTELIER	#
+//#		All Right Reserved		#
+//###############################
+
 // définition des variables globales
 window.onload=afficheur;
 var m=""; 	// contiendra le message à afficher

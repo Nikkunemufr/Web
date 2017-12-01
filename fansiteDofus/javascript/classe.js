@@ -1,3 +1,8 @@
+//###############################
+//#	Created by Alexis MORTELIER	#
+//#		All Right Reserved		#
+//###############################
+
 // apostrophe : &rsquo;
 //Tableaux contenant du contenu lié à chaque classes de personnages :
 var classe= new Array("Féca","Osamodas","Enutrof","Sram","Xélor","Ecaflip","Eniripsa","Iop","Crâ","Sadida","Sacrieur","Panda");

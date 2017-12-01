@@ -1,3 +1,7 @@
+//###############################
+//#	Created by Alexis MORTELIER	#
+//#		All Right Reserved		#
+//###############################
 window.onload = pageChargee;
 
 function pageChargee (){

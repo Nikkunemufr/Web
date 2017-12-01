@@ -1,3 +1,8 @@
+//###############################
+//#	Created by Alexis MORTELIER	#
+//#		All Right Reserved		#
+//###############################
+
 function theme(value){
 	document.getElementById('theme').setAttribute('href', value);
 }

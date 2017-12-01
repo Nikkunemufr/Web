@@ -1,3 +1,8 @@
+//###############################
+//#	Created by Alexis MORTELIER	#
+//#		All Right Reserved		#
+//###############################
+
 var jeu = new Array('g','g','g','v','d','d','d');
 
 window.onload=initjeu;

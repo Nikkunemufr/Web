@@ -1,3 +1,7 @@
+//###############################
+//#	Created by Alexis MORTELIER	#
+//#		All Right Reserved		#
+//###############################
 $(document).ready(function() 
 {
     $(".menuclose").css("display", "none");

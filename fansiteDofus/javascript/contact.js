@@ -1,3 +1,7 @@
+//###############################
+//#	Created by Alexis MORTELIER	#
+//#		All Right Reserved		#
+//###############################
 var current_fs, next_fs, previous_fs; //fieldsets
 var left, opacity, scale; //propriété des animations appliquer aux fieldsets
 

@@ -1,3 +1,7 @@
+//###############################
+//#	Created by Alexis MORTELIER	#
+//#		All Right Reserved		#
+//###############################
 window.onload=init;
 
 //agie sur la vitesse du scroll selon le calque
