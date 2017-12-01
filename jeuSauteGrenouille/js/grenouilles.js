@@ -1,6 +1,6 @@
 //###############################
 //#	Created by Alexis MORTELIER	#
-//#		All Right Reserved		#
+//#		All Rights Reserved		#
 //###############################
 
 var jeu = new Array('g','g','g','v','d','d','d');
