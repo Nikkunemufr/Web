@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<meta charset='UTF-8' />
+<title>Bataille</title>
+<p>Ouvrir la console pour voir le résultat</p>
+<script>
+"use strict";
+let couleurs = ["pique","coeur","trefle","carreau"];
+let valeurs = ["sept","huit","neuf","dix","valet","dame","roi","as"];
+
+function creerCarte(v, c){
+    return {valeur : v, couleur : c};
+}
+
+function afficherCarte(carte){
+    console.log(carte.valeur, "de", carte.couleur);
+}
+
+function creerJeuDeCartes(){
+    let jeu = []
+    for (let coul of couleurs){
+        for (let val of valeurs){
+            jeu.push(creerCarte(val, coul));
+        }
+    }
+    return jeu;
+}
+
+function combat(carte, autreCarte){
+    console.log("Combat Entre : ");
+    afficherCarte(carte);
+    afficherCarte(autreCarte);
+    console.log("Carte Gagnante : ");
+    if (valeurs.indexOf(carte.valeur) < valeurs.indexOf(autreCarte.valeur)) {
+        afficherCarte(autreCarte);
+        return 2;
+    } else if ( valeurs.indexOf(carte.valeur) > valeurs.indexOf(autreCarte.valeur)){
+        afficherCarte(carte);
+        return 1;
+    } else {
+        console.log("Egalité ! ");
+        return 0;
+    }
+}
+
+function tirerCarte(jeu){
+    let rand = Math.floor(Math.random()*jeu.length);
+    return jeu.splice(rand, 1)[0];
+}
+
+function distribuerMain(nb, jeu){
+    let main = []
+    for ( let i = 0; i < nb; i++){
+        main.push(tirerCarte(jeu));
+    }
+    return main;
+}
+
+for (let coul in couleurs){
+    for (let val in valeurs){
+        console.log(valeurs[val] + " de " + couleurs[coul]);
+    }
+}
+
+function jouerTour(mainDeToto, mainDeMimi){
+    let carteToto = mainDeToto.shift();
+    let carteMimi = mainDeMimi.shift();
+    if (combat(carteToto, carteMimi) == 1){
+        console.log("Victoire Toto");
+        mainDeToto.push(carteToto);
+        mainDeToto.push(carteMimi);
+    } else if (combat(carteToto, carteMimi) == 2){
+        console.log("Victoire Mimi");
+        mainDeMimi.push(carteToto);
+        mainDeMimi.push(carteMimi);
+    } else if (combat(carteToto, carteMimi) == 0){
+        if (Math.floor(Math.random()*2) <= 1){
+            console.log("Victoire Toto");
+            mainDeToto.push(carteToto);
+            mainDeToto.push(carteMimi);
+        } else {
+            console.log("Victoire Mimi");
+            mainDeMimi.push(carteToto);
+            mainDeMimi.push(carteMimi);
+        }
+    } 
+}
+
+function jouerPartie(){
+    let jeu = creerJeuDeCartes();
+    let mainToto = distribuerMain (jeu.length/2, jeu);
+    let mainMimi = distribuerMain (jeu.length/2, jeu);
+    while (mainToto.length != 0 || mainMimi.length != 0){
+        jouerTour(mainToto, mainMimi)
+    }
+}
+
+jouerPartie();
+
+</script>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<title>Hello world</title>
+<p>Ouvrir la console pour voir le résultat</p>
+<script>
+"use strict";
+
+alert("Hello, world!");
+console.log("Im in ur console");
+
+let x = 3;
+console.log(x);
+
+function saluer(){
+    console.log("test");
+}
+
+for(let i = 0; i < 100; i++){
+    setTimeout(saluer, 3000);
+}
+
+setTimeout(function () {
+	console.log("Surprise !!!");
+}, 5000);
+</script>

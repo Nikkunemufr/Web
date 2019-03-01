@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<title>Hello world</title>
+<p>Ouvrir la console pour voir le résultat</p>
+<script>
+"use strict";
+function etoiles(n) {
+    let res = "*";
+    for (let i = 0; i < n; i++) {
+        res += "*"
+    }
+    console.log(res);
+}
+
+etoiles(3);
+
+setTimeout(function () {
+	etoiles(17);
+}, 5000);
+</script>

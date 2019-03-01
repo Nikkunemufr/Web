@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<title>Hello world</title>
+<p>Ouvrir la console pour voir le résultat</p>
+<script>
+"use strict";
+let chanson = ["Libérée, délivrée","Je ne mentirai plus jamais","Libérée, délivrée","C'est décidé, je m'en vais"];
+chanson.push("Elsa");
+
+for(let i = 0; i < chanson.length -1; i++) {
+setTimeout(function () {
+	console.log(chanson[i]);;
+}, 1000*i);
+   
+}
+</script>
