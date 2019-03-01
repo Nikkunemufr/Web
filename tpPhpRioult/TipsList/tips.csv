@@ -1,0 +1,6 @@
+bash,; optionnel
+regexp,$ fin de ligne
+bash,? un caractère
+bash,* plusieurs (0) caractères
+awk,NF nombre de champs
+awk,exit ne saute pas le end
