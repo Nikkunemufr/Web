@@ -1,0 +1,26 @@
+@font-face {
+   font-family: "Archistico";
+   src: url("Archistico_Simple.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+   font-family: "Archistico";
+   src: url("Archistico_Bold.woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+   font-family: "KnowProduct";
+   src: url("Know_Your_Product.woff");
+}
+
+h1 {
+  font-family: "KnowProduct", Arial, sans-serif;
+}
+
+p {
+  font-family: "Archistico", Arial, sans-serif;
+}

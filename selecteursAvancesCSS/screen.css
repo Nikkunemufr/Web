@@ -1,0 +1,70 @@
+body {
+  width: 40em;
+  background-color: pink;
+  color:MediumVioletRed;
+}
+
+p::first-letter {
+  color:green;
+  font-size: 200%;
+}
+
+h2 + p::first-line {
+  font-style: italic;
+}
+
+h2:nth-of-type(odd){
+  text-align: right;
+  color:magenta;
+}
+
+h2:nth-of-type(even){
+  text-align: left;
+  color:purple;
+}
+
+p:last-child{
+  text-align: center;
+}
+
+h2::before{
+  content: "❦";
+  color:red;
+}
+
+h2::after{
+  content: "❦";
+  color:red;
+}
+
+p:hover{
+  color:#E0B0FF;
+}
+
+h2:active{
+  text-align:center;
+  border-width: 2px;
+  border-style : dotted;
+  border-color: #E0B0FF;
+}
+
+p:hover em{
+  color:purple;
+}
+
+p:hover + p{
+  color:pink;
+  background-color:magenta;
+}
+
+h2:hover{
+  text-transform: uppercase;
+}
+
+h2:hover ~ p{
+  color : cyan;
+}
+
+h2:hover ~ h2 ~ p{
+  color :unset;
+}

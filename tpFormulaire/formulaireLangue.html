@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Title of the document</title>
+</head>
+
+<body>
+<form action="recup.php" method="post">
+    <div>
+        <label for="name">Votre nom :</label>
+        <input type="text" name="name">
+	<fieldset>
+		<legend>Les langues que vous parlez</legend>
+		<input type="checkbox" name="langue[]" value="francais"/> <label for="langue">français</label><br />
+		<input type="checkbox" name="langue[]" value="anglais"/> <label for="langue">anglais</label><br />
+		<input type="checkbox" name="langue[]" value="allemand"/> <label for="langue">allemand</label><br />	
+	</fieldset>
+	<fieldset>
+		<legend>Votre couleur préférée</legend>
+		<input type="radio" name="color" value="red" checked="checked" /> <label for="color">rouge</label>
+		<input type="radio" name="color" value="blue"/> <label for="color">bleu</label>
+		<input type="radio" name="color" value="green"/> <label for="color">vert</label>
+	</fieldset>
+	<input type="submit" value="Envoyer">
+
+    </div>
+</form>
+</body>
+
+</html>

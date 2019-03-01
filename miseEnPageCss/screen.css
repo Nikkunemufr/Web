@@ -1,0 +1,172 @@
+/*
+ * La page étant très simple et en un seul morceau, on choisit
+ * d'écrire tout le CSS dans l'ordre de la page. Cette approche
+ * ne marche pas bien pour une page plus complexe et/ou un design
+ * plus modulaire. Il est alors conseillé de regrouper tout ce qui
+ * concerne la mise en page générale (organisation des zones),
+ * c'est-à-dire comment chaque bloc se comporte vis-à-vis des autres,
+ * et de traiter ensuite les détails de l'intérieur de chaque bloc
+ * (ce qui n'influence pas le reste de la page).
+ */
+
+body {
+	max-width: 1000px;
+	margin: auto;
+	font-family: sans-serif;
+}
+
+/* pas besoin du style normal des listes */
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+
+/************************************************************************
+ **** BANNIÈRE
+ ************************************************************************/
+
+.banniere {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.logo {
+	padding: 20px;
+}
+
+.logo img {
+	display: block;
+}
+
+.menu ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.menu li {
+	text-align: center;
+}
+
+.menu a {
+	/*
+	 * IMPORTANT : on met le lien en display:block, et on précise le
+	 * padding ici (et non dans le li), pour que le lien couvre
+	 * tout le bloc parent — ergonomie bien meilleure !
+	 */
+	display: block;
+	padding: 20px;
+	color: black;
+	text-decoration: none;
+}
+
+.bouton-menu { background-color: #F9F9F9; }
+.bouton-dkk { background-color: #F4F4F4; }
+.bouton-panier { background-color: #EDEDED; }
+
+
+/************************************************************************
+ **** PRODUITS
+ ************************************************************************/
+
+.produits {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+
+/*
+ * .premier, .quatrieme { background-color: #DBEAD8; }
+ * .deuxieme, .cinquieme { background-color: #C2D4D8; }
+ * .troisieme, .sixieme { background-color: #B0ABC3; }
+ *
+ * Solution alternative, beaucoup plus propre, ne nécessite pas
+ * de classes dans le HTML :
+ */
+.produits li:nth-child(3n+1) { background-color: #DBEAD8; }
+.produits li:nth-child(3n+2) { background-color: #C2D4D8; }
+.produits li:nth-child(3n+3) { background-color: #B0ABC3; }
+
+
+.produits h2 {
+	color: white;
+	padding-left: 2em;
+}
+
+
+/************************************************************************
+ **** PIED DE PAGE
+ ************************************************************************/
+
+.pied {
+	font-size: small;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+
+/****** ce qui concerne les deux zones */
+
+.infos, .paiement {
+	padding: 20px 0;
+}
+
+.infos li, .paiement li {
+	/*
+	 * Ici, on a besoin que les items soient affichés horizontalement,
+	 * sans avoir besoin d'une mise en page précise (au pixel près) :
+	 * on utilise inline-block pour se simplifier la vie
+	 */
+	display: inline-block;
+}
+
+
+/****** ce qui ne concerne que la zone de gauche */
+
+.infos {
+	text-align: center;
+}
+
+.infos li {
+	margin: 0 1em;
+}
+
+.infos a {
+	color: black;
+	text-decoration: none;
+}
+
+/****** ce qui ne concerne que la zone de droite */
+
+.paiement {
+	text-align: right;
+}
+
+.paiement h3 {
+	display: inline-block;
+	margin: 0 1em;
+	/*
+	 * On veut annuler l'effet visuel du h3 (texte plus gros et en gras).
+	 * Plutôt que de préciser font-weight:normal et font-size:normal,
+	 * on met inherit, c'est-à-dire «prends la valeur du parent».
+	 * Ainsi, si on met tout le texte de la page en petit, grand, ou gras,
+	 * ça marchera toujours comme on veut.
+	 */
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+.paiement ul {
+	display: inline-block;
+	margin: 0 1em;
+}
+
+.paiement li {
+	color: white;
+	background-color: black;
+	border-radius: .5em;
+	font-size: .9em;
+	padding: .2em;
+}
+
