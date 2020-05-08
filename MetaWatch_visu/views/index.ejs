@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>MetaWatch</title>
+    <link rel="stylesheet" href="semantic/semantic.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="images/logometawatch.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+
+<body>
+<style>
+
+</style>
+
+<header class="ui grid center aligned middle aligned homeimage">
+    <h1 class="ui column header">
+        <img src="images/logometawatch.png" class="ui image">
+        <div class="content ui inverted huge header">
+            MetaWatch
+            <div class="sub header">Define the meta.</div>
+        </div>
+
+    </h1>
+</header>
+
+<div class="ui main text container">
+    <h1 class="ui header">Introduction</h1>
+    <p>
+        Lors de notre formation au sein de l'université de Caen en master informatique spécialité décision
+        et optimisation nous avons eu à effectuer un projet sous la tutelle d'un de nos enseignants.
+        Nous avons choisi le sujet de M. François Rioult, "Cible audio pour l'analyse de parties d'Overwatch".
+        Ce sujet a pour but d'extraire des profils d'intérêt lors de parties castées d'Overwatch et de voir
+        s'il existe une concordance entre celle-ci et la voix des commentateurs et du bruit de la foule pendant ces
+        parties.
+        Durant ce projet nous avons commencé par fabriquer nos données, en effet,
+        ne disposant que des vidéos des parties d'Overwatch nous avons dû commencer par extraire les informations
+        que nous donne l'image pour en faire émerger des profils d'intérêts. Suite à cela nous avons extrait le son
+        des vidéos afin de faire passer les profils d'intérêts et les données du son dans un réseau de neurones
+        pour trouver un lien. Enfin nous discuterons sur les résultats pour en répondre à notre problématique.
+    </p>
+    <h1 class="ui header">Contexte et motivations</h1>
+    <h1 class="ui sub header">Pourquoi ce sujet est intéressant?</h1>
+    <p>
+        Étant tout les trois passionnés de jeu vidéo et d'eSport et intéressé par la fouille de données dans
+        l'informatique,
+        avoir un sujet mêlant le côté eSport à la recherche informatique étaient un défi amusant a relevé
+    </p>
+    <h1 class="ui sub header">Contexte général</h1>
+    <p>
+        L'eSport est un sport à la mode, en effet, bien qu'ayant souffert de critique et de manque de popularité, car
+        "mal vu".
+        Mais depuis quelques années il ne cesse de se professionnaliser, des entreprises
+        ou encore des clubs sportifs connus comme le PSG, Arsenal, l'AS Roma ou encore le FC Grenoble investissent
+        dans des équipes d'eSport et se range aux côtés des équipes bien installées tels que Vitality, Cloud9, T1 ou
+        encore Envy.
+        L'eSport et plus particulièrement OverWatch essaye de se calquer sur un modèle NBA afin que les adeptes
+        de sport puissent se retrouver dans l'eSport. Avec l'OverWatch League par exemple qui regroupe
+        les 20 meilleurs équipes du monde où chacune d'entre elles représente une ville bien distincte
+        et a vu son nom associé à celle-ci. Chacune des équipes s'affronte au cours de 4 stages dans l'année afin
+        d'accéder aux playoffs de fin de stage et ainsi être reconnue comme la meilleure équipe de la ligue.
+    </p>
+    <h1 class="ui sub header">Motivations</h1>
+    <p>
+        Dans ce cadre, on s'intéressera plus spécifiquement à OverWatch afin de déterminer si le cast d'une partie colle
+        aux profils d'interets et à ses moments importants.
+    </p>
+    <h1 class="ui sub header">Définition de l'objectif</h1>
+    <p>
+        L'objectif à long terme est de prédire les moments importants d'une partie afin d'en faire un résumé.
+        Pour ce faire nous tirons des données des différentes parties de l'OverWatch League que nous ferons apprendre à
+        un réseau de neurone.
+    </p>
+    <h1 class="ui header">Qu'est ce qu'Overwatch?</h1>
+    <h1 class="ui sub header">Un FPSMOBA</h1>
+    <p>
+        OverWatch est un jeu où deux équipes de 6 joueurs s'affrontent.
+        C'est un jeu à mis chemin entre le FPS(jeu de tir à la première personne)
+        et le MOBA(jeu où s'affrontent deux équipes pour prendre un objectif avec une notion d'économie des ressources).
+        Chaque joueur peut incarner un héros qu'il pourra changer à sa guise au cours de la partie.
+    </p>
+    <h1 class="ui sub header">Les héros</h1>
+    <p>
+        Un héros est le personnage qu'incarne le joueur, celui-ci possède des capacités.
+        Chaque héros appartient à une catégorie, tank, healer ou DPS.
+        Chaque équipe possède donc 6 héros et doit avoir 2 tank 2 healer et 2 DPS qu'elle choisira parmis les 31 héros
+        disponible listé ci-dessous.
+        La composition au sein d'une équipe accroît ses chances de victoires.
+        Il faut donc bien penser aux héros qu'on associera au sein de l'équipe.
+        Une équipe avec des héros qui se synergise mal aura moins de chance de victoire qu'une équipe avec des héros qui
+        se synergise.
+    </p>
+    <div class="ui centered one column grid">
+        <img class="ui image column" src="images/owheroesicons.png"/>
+    </div>
+    <h1 class="ui sub header">Les modes de jeux</h1>
+    <p>
+        Les matchs se jouent sur 4 modes différents.
+        Le point de controle, l'escorte, l'attaque de points et l'hybride attaque/escorte.
+        Chaque mode de jeu place une équipe en attaque et une autre en défense.
+    </p>
+
+    <div class="ui center aligned container">
+        <div class="ui horizontal inverted small divided link list">
+            <div class="ui four column grid">
+                <div class="column">
+                    <img class="item" src="images/koth_icon.png"/>
+                    <div class="ui inverted section divider"></div>
+                    <p class="ui sub header">Deux équipes s’affrontent pour la capture et le contrôle d’un seul objectif
+                        à la fois. La première équipe qui gagne deux manches remporte la partie. </p>
+                </div>
+                <div class="column">
+                    <img class="item" src="images/2cp_icon.png"/>
+                    <div class="ui inverted section divider"></div>
+                    <p class="ui sub header">Les attaquants doivent capturer une série d’objectifs ; les défenseurs
+                        tentent de les en empêcher jusqu’à la fin du temps imparti.</p>
+                </div>
+                <div class="column">
+                    <img class="item" src="images/hybrid_icon.png"/>
+                    <div class="ui inverted section divider"></div>
+                    <p class="ui sub header">Les attaquants commencent par capturer un convoi, avant de l’escorter
+                        jusqu’à sa destination pendant que les défenseurs tentent de les en empêcher</p>
+                </div>
+                <div class="column">
+                    <img class="item" src="images/payload_icon.png"/>
+                    <div class="ui inverted section divider"></div>
+                    <p class="ui sub header">Les attaquants doivent escorter un convoi jusqu’à sa destination pendant
+                        que les défenseurs tentent de les en empêcher</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 class="ui header">MetaWatch</h1>
+    <h1 class="ui sub header">Analyseur de replay</h1>
+
+    <label class="ui sub header" for="movies">Vidéo : </label>
+    <select name="movieSelect" id="movieSelect">
+        <%
+        videos.forEach(function (videos) { %>
+        <option value="<%= videos %>"> <%= videos %>
+            <% }) %>
+        </option>
+    </select>
+    <button id="buttonAnalyzer" class="ui secondary button">Analyser</button>
+
+    <div id="videoContainer">
+        <video id="videoSource" width="100%" height="500px" controls>
+            <source id="videoSrc" src="video/<%= vid_uuid %>.mp4" type="video/mp4">
+        </video>
+
+    </div>
+    <p id="currFrame"><b>Current frame: </b>0</p>
+    <div id="healthBarContainer" class="ui container">
+        <h1 class="ui sub header">Barres de vie : </h1>
+        <div id="healthBar">
+
+        </div>
+    </div>
+
+    <div id="deathCountContainer" class="ui container">
+        <h1 class="ui sub header">Mort dans le temps : </h1>
+        <div id="deathCount">
+
+        </div>
+    </div>
+
+    <div id="ultiStateContainer" class="ui container">
+        <h1 class="ui sub header">Etat des capacités ultimes : </h1>
+        <div id="ultiState">
+
+        </div>
+    </div>
+
+    <div id="deathPlayerContainer" class="ui container">
+        <h1 class="ui sub header">Mort par joueurs : </h1>
+        <div id="deathPlayer">
+
+        </div>
+    </div>
+    <!--
+    https://www.d3-graph-gallery.com/graph/interactivity_brush.html -> ulti et mort (video complete)
+    https://www.d3-graph-gallery.com/graph/lollipop_button_data_csv.html -> Nombre de mort par joueur
+    -->
+
+
+</div>
+
+
+<footer class="ui inverted vertical footer segment">
+    <div class="ui center aligned container">
+        <div class="ui stackable centered inverted ">
+            <div class="seven wide column">
+                <h4 class="ui inverted centered header">But du projet</h4>
+                <p>Ce projet à été concu dans le cadre de la formation de master décision et optimisation de
+                    l'université de caen.</p>
+            </div>
+        </div>
+        <div class="ui inverted section divider"></div>
+        <img src="images/logometawatch.png" class="ui centered mini image">
+        <div class="ui horizontal inverted small divided link list">
+            ©2020 Alexis MORTELIER. Tous droits réservés.
+        </div>
+    </div>
+</footer>
+
+
+<script src="js/dataMovies.js"></script>
+<script src="d3/healthbar.js"></script>
+<script src="d3/deathcount.js"></script>
+<script src="d3/ultimatestate.js"></script>
+<script src="d3/deatheachplayer.js"></script>
+
+</body>
+</html>
